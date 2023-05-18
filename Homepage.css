@@ -1580,3 +1580,9 @@ left: -0.5%;
 }
 
 
+@media only screen and (max-width: 1440px) {
+  body {
+    background-color: lightblue;
+  }
+}
+
