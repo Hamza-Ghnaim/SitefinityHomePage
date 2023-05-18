@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="682.5" height="33" viewBox="0 0 682.5 33">
+  <g id="Group_11" data-name="Group 11" transform="translate(-1282.5 -265)">
+    <line id="Line_1" data-name="Line 1" x2="679" transform="translate(1282.5 281.5)" fill="none" stroke="#fff" stroke-width="1"/>
+    <g id="Group_10" data-name="Group 10" transform="translate(-1 271)">
+      <circle id="Ellipse_4" data-name="Ellipse 4" cx="4.5" cy="4.5" r="4.5" transform="translate(1957 6)" fill="#fff"/>
+      <circle id="Ellipse_3" data-name="Ellipse 3" cx="4.5" cy="4.5" r="4.5" transform="translate(1790 6)" fill="#fff"/>
+      <circle id="Ellipse_2" data-name="Ellipse 2" cx="4.5" cy="4.5" r="4.5" transform="translate(1623 6)" fill="#fff"/>
+      <circle id="Ellipse_1" data-name="Ellipse 1" cx="16.5" cy="16.5" r="16.5" transform="translate(1432 -6)" fill="#fff"/>
+    </g>
+    <text id="_1" data-name="1" transform="translate(1444 286)" fill="#101135" font-size="12" font-family="SegoeUI, Segoe UI"><tspan x="0" y="0">1</tspan></text>
+  </g>
+</svg>
