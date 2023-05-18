@@ -1449,7 +1449,7 @@ height:35.29px ;
 
 }
 
-.navbar-content {
+/* .navbar-content {
   display: flex;
   gap: 41px;
 }
@@ -1462,11 +1462,54 @@ height:35.29px ;
 }
 
 .navbar-content input{
-  margin-right: 15px;
   width: 110px;
   margin-right: 0%;
   visibility: hidden; 
+} */
+
+/* .navbar-content {
+  display: flex;
+  gap: 41px;
 }
+
+.navbar-content a {
+  text-decoration: none;
+  color: black;
+  display: flex;
+  align-items: center;
+}
+
+.navbar-content input {
+  width: 17.8%;
+  margin-right: 0%;
+  visibility: hidden;
+} */
+
+.navbar-content {
+  display: flex;
+  gap: 41px;
+}
+
+.navbar-content a {
+  text-decoration: none;
+  color: black;
+  display: flex;
+  align-items: center;
+}
+
+.navbar-content input {
+  width: 17.8%;
+  margin-right: 0%;
+  visibility: hidden;
+  opacity: 0;
+  transition: opacity 0.9s ease;
+}
+
+.navbar-content input.visible {
+  visibility: visible;
+  opacity: 1;
+}
+
 
 .logo {
   /* width: 257px; */
