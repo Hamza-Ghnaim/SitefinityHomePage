@@ -1523,7 +1523,7 @@ height:35.29px ;
   bottom: 0;
   height: 3px;
   width: 100%;
-  background: linear-gradient(to right, #DA6123 5%, #EAEAEA 5%, #EAEAEA);
+  /* background: linear-gradient(to right, #DA6123 5%, #EAEAEA 5%, #EAEAEA); */
 }
 
 .circle-left{
