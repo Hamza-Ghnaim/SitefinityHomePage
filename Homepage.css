@@ -80,7 +80,8 @@ body {
 
 .images-container{
   position: relative;
-background: transparent linear-gradient(0deg, #DA6123 0%, #101135 100%) 0% 0% no-repeat padding-box;
+/* background: transparent linear-gradient(0deg, #DA6123 0%, #101135 100%) 0% 0% no-repeat padding-box; */
+background: transparent linear-gradient(0deg, #DA6123 0%, #101135 50%) 0% 0% no-repeat padding-box;
   /* background-image: url("Rectangle\ 203.png"); */
   /* background-repeat: no-repeat; */
   /* width: 1449px; */
@@ -399,7 +400,7 @@ height: auto;
   /* width: 1612px; */
   width: 100%;
   /* background-image: url(Rectangle\ 131.png); */
-  background: transparent linear-gradient(270deg, #DA6123 0%, #101135 100%) 0% 0% no-repeat padding-box;
+  background: transparent linear-gradient(270deg, #DA6123 0%, #101135 50%) 0% 0% no-repeat padding-box;
 
 }
 
@@ -1426,10 +1427,9 @@ height:35.29px ;
   position: absolute;
   color: white;
   font-size: 12px;
-  /* width: 410px; */
+  opacity: 60%;
   width: 25.4%;
   height: 46px;
-  /* right: 300px; */
   right: 20%;
   bottom: 105px;
 }
@@ -1442,7 +1442,6 @@ height:35.29px ;
   flex-direction: row;
   align-items: center;
   justify-content: center;
-  /* gap: 440px; */
     position: fixed;
     top: 0;
     width: 100%;
@@ -1455,7 +1454,7 @@ height:35.29px ;
 .navbar {
   display: flex;
   width: 100%;
-  justify-content: space-between;
+  /* justify-content: space-between; */
 
 }
 
@@ -1498,6 +1497,7 @@ height:35.29px ;
 .navbar-content {
   display: flex;
   gap: 41px;
+  margin-left: 26%;
 }
 
 .navbar-content a {
@@ -1695,6 +1695,18 @@ left: -0.5%;
   height: 466px;
 
 }
+.my-form button {
+  background: transparent;
+  color: white;
+  /* width: 184px; */
+  width: 35.3%;
+  height: 65px;
+  border: 1px solid #FFFFFF;
+  border-radius: 6px;
+  font-size: 19px;
+  line-height: 36px;
+  opacity: 50%;
+}
 }
 
 /* ////////////////////////////////////////////////// 
@@ -1719,14 +1731,11 @@ left: -0.5%;
 */
 
 @media only screen and (max-width: 1366px) {
-  .logo{
-    margin-left: 6%;
-  }
   .logo img{
     width: 130%;
   }
   .navbar-content {
-    gap: 22px;
+    gap: 18px;
 }
   .navbar-content a{
     font-size: 12px;
@@ -1824,5 +1833,123 @@ left: -0.5%;
   right: 13%;
   bottom: 110px;
 }
+.row1{
+  gap: 12%;
+}
+.row2{
+  gap: 10%;
 }
 
+}
+
+/* ////////////////////////////////////////////////// 
+//////////////////////////////////////////////////
+//////////////////////////////////////////////////
+//////////////////////////////////////////////////
+//////////////////////////////////////////////////
+//////////////////////////////////////////////////
+//////////////////////////////////////////////////
+//////////////////////////////////////////////////
+//////////////////////////////////////////////////
+//////////////////////////////////////////////////
+//////////////////////////////////////////////////
+//////////////////////////////////////////////////
+//////////////////////////////////////////////////
+//////////////////////////////////////////////////
+//////////////////////////////////////////////////
+//////////////////////////////////////////////////
+//////////////////////////////////////////////////
+//////////////////////////////////////////////////
+//////////////////////////////////////////////////
+*/
+
+@media only screen and (max-width: 1200px){
+
+
+  .images-container {
+    height: 651px;
+  }
+  .Organizations-banner {
+    gap: 0px;
+  }
+  .banner-slider {
+    width: 458px;
+    bottom: 24%;
+  }
+  .scroll-Button {
+    width: 46.5%;
+    height: 61px;
+    font-size: 13px;
+  }
+  .more-Text p {
+    line-height: 15px;
+    font-size: 13px;
+}
+.X5-Image {
+  /* width: 265px; */
+  width: 70%;
+}
+.more-Image {
+  width: 71%;
+  height: 70px;
+  transform: translateY(-87px);
+}
+.more-Text {
+  width: 100%;
+  transform: translateY(-70px);
+}
+.HeaderTextInner {  
+  gap: 9.5px;
+}
+.HeaderText1 {
+  font-size: 52px;
+  line-height: 50px;
+}
+.HeaderText2 {
+  font-size: 24px;
+  line-height: 38px;
+}
+.HeaderText3 {
+  font-size: 14px;
+  line-height: 28px;
+  margin-top: 11.7px;
+}
+.card-headline {
+  font-size: 24px;
+  line-height: 26px;
+}
+.row2 {
+  gap: 13%;
+}
+.row1 {
+  gap: 14%;
+}
+.column1 {
+  /* margin-left: 150.5px; */
+  margin-left: 7%;
+}
+.column3 {
+
+  margin-left: 23%;
+}
+.card-description1 {
+  width: 150%;
+  font-size: 12px;
+  line-height: 27px;
+}
+.card-description2 {
+  width: 150%;
+  font-size: 12px;
+  line-height: 27px;
+}
+.card-description3 {
+  width: 150%;
+  font-size: 12px;
+  line-height: 27px;
+}
+.card-description4 {
+  width: 150%;
+  font-size: 12px;
+  line-height: 27px;
+}
+}
