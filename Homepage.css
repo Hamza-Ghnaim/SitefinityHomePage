@@ -1707,8 +1707,10 @@ left: -0.5%;
   line-height: 36px;
   opacity: 50%;
 }
+.HeaderText {
+ margin-top: 120px;
 }
-
+}
 /* ////////////////////////////////////////////////// 
 //////////////////////////////////////////////////
 //////////////////////////////////////////////////
@@ -1840,6 +1842,10 @@ left: -0.5%;
   gap: 10%;
 }
 
+.HeaderText {
+  margin-top: 100px;
+}
+
 }
 
 /* ////////////////////////////////////////////////// 
@@ -1952,4 +1958,81 @@ left: -0.5%;
   font-size: 12px;
   line-height: 27px;
 }
+.capabilities-header1 {
+  font-size: 28px;
 }
+.capabilities-header2 {
+  font-size: 46px;
+  width: 47%;
+}
+.capabilities-text {
+  font-size: 14px;
+  line-height: 27px;
+  width: 55%;
+}
+.Capabilities-inner {
+  height: 380px;
+}
+.Capabilities-poster {
+  top: -19%;
+  right: 2%;
+  width: 41.7%;
+}
+.capabilities-button {
+  font-size: 16px;
+  margin-top: 23.6px;
+}
+.HeaderText {
+  margin-top: 0px;
+}
+.pre-footer{
+  margin-top: 0px;
+}
+
+.slider {
+    width: 81%;
+    margin-left: 19%;
+}
+.leftpre-header {
+  font-size: 36px;
+  line-height: 58px;
+}
+.comma-text p {
+  margin-top: 40px;
+  font-size: 12px;
+  line-height: 24px;
+}
+.left-pre button {
+  margin-top: 30px;
+  font-size: 14px;
+}
+.my-form p {
+  font-size: 40px;
+  line-height: 65px;
+  margin-bottom: 20.9px;
+}
+.my-form button{
+height: 54px;
+font-size: 16px;
+}
+}
+
+@media only screen and (max-width: 1022px){
+  .logo{
+    margin-left: 9%;
+  }
+  .logo img{
+    width: 208px;
+}
+.navbar-content {
+  gap: 15px;
+  margin-left: 19%;
+}
+.navbar-content a {
+  font-size: 10px;
+}
+.images-container {
+  height: 650px;
+}
+}
+
