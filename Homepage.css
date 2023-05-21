@@ -2032,7 +2032,191 @@ font-size: 16px;
   font-size: 10px;
 }
 .images-container {
-  height: 650px;
+  height: 531px;
 }
+.Organizations-banner{
+  margin-top: 17%;
 }
+.Organizations-Perform {
+  font-size: 26px;
+  line-height: 37px;
+}
+.Drive-result {
+  font-size: 10px;
+  line-height: 28px;
+}
+.TeamsWorkbtn {
+  font-size: 10px;
+  width: 138px;
+  height: 40px;
+  margin-top: 21px;
+}
+.banner-slider {
+  width: 329px;
+  bottom: 27%;
+}
+.scrollEHeader {
+  font-size: 25px;
+}
+.carousel-slider{
+  width: 95%;
+}
+.experiencing-section {
+  gap: 7%;
+}
+.active-cell {
+  width: 96%;
+}
+.textDiv p {
+  font-size: 13px;
+  margin-top: 4%;
 
+}
+.scroll-Button {
+  width: 43.5%;
+  height: 51px;
+  font-size: 10px;
+}
+.X-section {
+  margin-top: 112px;
+  gap: 127px;
+}
+.X5-section {
+  width: 34%;
+  margin-top: 14px;
+}
+.more-Text p {
+  line-height: 14px;
+  font-size: 10px;
+}
+.more-Text {
+  width: 100%;
+  transform: translateY(-82px);
+}
+.row1 {
+  gap: 16%;
+}
+.column3 {
+  margin-left: 19%;
+}
+.HeaderTextInner {
+  width: 85%;
+}
+.card-headline {
+  font-size: 20px;
+  line-height: 24px;
+}
+.card-description1 {
+  width: 94%;
+  font-size: 11px;
+  line-height: 19px;
+}
+.card-description2 {
+  width: 94%;
+  font-size: 11px;
+  line-height: 19px;
+}
+.card-description3 {
+  width: 94%;
+  font-size: 11px;
+  line-height: 19px;
+}
+.card-description4 {
+  width: 94%;
+  font-size: 11px;
+  line-height: 19px;
+}
+.column1 {
+  margin-left: 6%;
+}
+.column3{
+    margin-left: 17%;
+}
+.cards-button {
+font-size: 11px;
+}
+.capabilities-inner2 {
+  margin-top: 12px;
+  margin-left: 4.3%;
+}
+.capabilities-header1 {
+  font-size: 22px;
+  width: 89px;
+}
+.capabilities-header2 {
+  font-size: 34px;
+  width: 45%;
+}
+.capabilities-text {
+  font-size: 12px;
+  line-height: 24px;
+  width: 53%;
+}
+.capabilities-button {
+  font-size: 14px;
+  margin-top: 23.6px;
+  height: 60px;
+}
+.Capabilities-inner {
+  height: 285px;
+}
+.leftpre-header {
+  font-size: 27px;
+  line-height: 51px;
+}
+.comma-text p {
+  margin-top: 40px;
+  font-size: 11px;
+  line-height: 23px;
+}
+.left-pre button {
+  margin-top: 28px;
+  font-size: 11px;
+  height: 52px;
+}
+.content-container {
+  height: 57%;
+}
+.slider {
+  width: 74%;
+  margin-left: 26%;
+}
+.slider-content {
+  display: flex;
+  flex-direction: column;
+  margin-left: 88px;
+  margin-top: 66px;
+}
+.slider-logo {
+  margin-bottom: 10px;
+}
+.slider-fname {
+  font-size: 16px;
+  line-height: 36px;
+}
+.slider-title {
+  font-size: 16px;
+  line-height: 36px;
+}
+.my-form {
+  margin-top: 92.5px;
+  margin-left: 14.1%;
+}
+.my-form p {
+  font-size: 35px;
+  line-height: 65px;
+  margin-bottom: 20.9px;
+}
+.important-links {
+  gap: 30px;
+  font-size: 11px;
+}
+.ending-text {
+  width: 38.4%;
+  font-size: 10px;
+  height: 46px;
+  /* right: 300px; */
+  right: 7%;
+  bottom: 146px;
+}
+}
