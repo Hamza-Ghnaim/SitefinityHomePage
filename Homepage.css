@@ -540,7 +540,7 @@ height: auto;
 .secondary {
   /* background-image: url(organization.png); */
   /* width: 792px; */
-  max-width: 56%;
+  width: 56%;
   height: auto;
   /* height: 570px; */
   position: absolute;
@@ -1494,6 +1494,24 @@ height:35.29px ;
   visibility: hidden;
 } */
 
+/* .mobile-navbarContent{
+  display: none;
+  flex-direction: row;
+  justify-content: center;  
+  align-items: center;
+  gap: 5.8%;
+  margin-left: 27%;
+} */
+
+.mobile-navbarContent {
+  display: none;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 117.8%;
+  margin-left: 50%;
+}
+
 .navbar-content {
   display: flex;
   gap: 41px;
@@ -1589,6 +1607,62 @@ left: -0.5%;
   height: 100%;
 }
 
+.search-image{
+  width: 22px;
+  height: 22px;
+}
+
+.menu-image{
+  width: 28px;
+  height: 22px;
+}
+.search-field {
+  border: 2px solid rgb(218, 97, 35);
+  display: none;
+  position: fixed;
+  top: 13%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.search-field.show {
+  display: block;
+}
+
+.menu-list {
+  visibility: hidden;
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  position: fixed;
+  top: 17%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 50%;
+  background-color: rgba(0, 0, 0, 0.5);
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
+  z-index: 2;
+}
+
+.menu-list li {
+  padding: 10px;
+  text-align: center; /* Center the text */
+  margin-bottom: 8px; /* Add a gap between each li element */
+}
+
+.menu-list li a {
+  text-decoration: none;
+  color: #fff;
+}
+
+.overlay.show {
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+.menu-list.show {
+  visibility: visible;
+}
+
 
 @media only screen and (max-width: 1440px) {
   .Organizations-Perform{
@@ -1622,7 +1696,7 @@ left: -0.5%;
   }
   .secondary{
     top: 154px;
-    max-width: 55%;
+    width: 55%;
   }
   .third1{
     top: 239px;
@@ -2219,4 +2293,44 @@ font-size: 11px;
   right: 7%;
   bottom: 146px;
 }
+}
+
+@media only screen and (max-width: 767px){
+  .encloser{
+    margin-top: 268px;
+  }
+  .navbar-content {
+    display: none;
+    /* margin-left: 26%; */
+  }
+  .mobile-navbarContent{
+    display: flex;
+  }
+  .logo{
+    margin-left: 8%;
+    /* width: 38%; */
+    /* height:20px ; */
+  }
+  .logo img{
+    /* width: 166px; */
+  }
+  .images-container {
+    width: 91.6%;
+    height: 531px;
+  }
+  .secondary {
+  width: 73%;
+  height: 301px;
+  top: -84px;
+  }
+  .secondary img{
+    height: 100%;
+  }
+  .Organizations-banner {
+    margin-top: 35%;
+}
+.banner-slider {
+  bottom: 7%;
+}
+
 }
