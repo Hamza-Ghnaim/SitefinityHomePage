@@ -1632,6 +1632,11 @@ height:48px ;
   margin-left: 50px;
   width: 75%;
   margin-top: 31px;
+  text-align: left;
+font: normal normal normal 15px/28px Cooper Hewitt;
+letter-spacing: 0.07px;
+color: #101135;
+opacity: 1;
 }
 .mobile-sliderfname p{
   text-align: left;
@@ -1647,6 +1652,16 @@ font: normal normal normal 15px/28px Cooper Hewitt;
 letter-spacing: 0.07px;
 color: #101135;
 opacity: 1;
+}
+.mobile-sliderbutton{
+  height: 73px;
+  width: 51.4%;
+  margin-left: 19%;
+  border: 1px solid #101135;
+border-radius: 6px;
+opacity: 1;
+background: transparent;
+margin-top: 15px;
 }
 @media only screen and (max-width: 1440px) {
   .Organizations-Perform{
