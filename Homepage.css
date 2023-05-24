@@ -352,6 +352,9 @@ height: auto;
   width: 200px;
   height: 76px;
 }
+.mobile-footer{
+  display: none;
+}
 
 
 .HeaderText1{
@@ -1535,8 +1538,116 @@ left: -0.5%;
 .menu-list.show {
   visibility: visible;
 }
+.title{
+  width: 90%;
+  height: 28px;
+text-align: left;
+font: normal normal normal 28px/43px Cooper Hewitt;
+letter-spacing: 0px;
+color: #101135;
+opacity: 1;
+margin-left: 8.6%;
+}
+.mobile-slider{
+  width: 91.6%;
+  transform: translateX(9.2%);
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  gap: 23.3%;
+  margin-top: 53px;
+}
+.mobile-line{
+  position: absolute;
+  top: 50%;
+  width: 100%;
+  height: 1px;
+  background: #DA6123;
+}
+.mobile-btn {
+  z-index: 1;
+  width: 9px;
+  height: 9px;
+  background: #DA6123;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  /* opacity: 0.5; */
+  transition: all 0.3s;
+}
+.mobile-btnText{
+  color: white;
+  z-index: 1;
+}
 
 
+.mobile-btn.active {
+  color: white;
+  z-index: 1;
+  width: 30px;
+  height: 30px;
+  opacity: 1;
+}
+.mobile-contentcontainer{
+  margin-top: 50.5px;
+}
+.mobile-slidercontent{
+  height: 167px;
+background: transparent linear-gradient(90deg, #EAEAEA00 0%, #EAEAEA 100%) 0% 0% no-repeat padding-box;
+opacity: 0.5;
+margin-left: 8%;
+display: flex;
+flex-direction: row;
+gap: 2%;
+}
+.mobile-sliderlogo{
+  padding: 4px;
+  margin-top: 42px;
+  width: 155px;
+  height: 57px;
+}
+.mobile-sliderlogo img{
+  background: #FFFFFF 0% 0% no-repeat padding-box;
+mix-blend-mode: color;
+opacity: 1;
+  width: 130px;
+  height: 40px;
+}
+.mobileCarouser-text{
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  margin-top: 42px;
+}
+.mobile-commatext{
+  margin-left: 8.6%;
+  transform: translateY(-27px);
+}
+.mobile-commatext img { 
+width: 48px;
+height:48px ;
+}
+.mobile-commatext p{
+  margin-left: 50px;
+  width: 75%;
+  margin-top: 31px;
+}
+.mobile-sliderfname p{
+  text-align: left;
+font: normal normal normal 16px/20px Cooper Hewitt;
+letter-spacing: 0px;
+color: #101135;
+text-transform: uppercase;
+opacity: 1;
+}
+.mobile-slidertitle{
+  text-align: left;
+font: normal normal normal 15px/28px Cooper Hewitt;
+letter-spacing: 0.07px;
+color: #101135;
+opacity: 1;
+}
 @media only screen and (max-width: 1440px) {
   .Organizations-Perform{
     font-size: 50px;
@@ -2478,21 +2589,18 @@ opacity:1;
 margin-left: 19%;
 }
 .pre-footer {
-  margin-top: 132px;
-  /* margin-left: 162px; */
-  margin-left: 0;
-  height: 414px;
-  /* width: 1450px; */
-  width: 100%;
-  /* position: relative; */
-  display: flex;
-  flex-direction: column;
-  /* gap: 45px; */
-  gap: 3.1%;
+display: none;
 }
 .footer{
   margin-top: 400px;
 }
+.mobile-footer{
+  margin-top: 132px;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+}
+
 }
 
 @media only screen and (max-width: 630px){
