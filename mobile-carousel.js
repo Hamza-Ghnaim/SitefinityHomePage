@@ -1,9 +1,9 @@
-const slider = document.querySelector('.mobile-slider');
-const buttons = slider.querySelectorAll('.mobile-btn');
-let activeIndex = 0;
+const Mobileslider = document.querySelector('.mobile-slider');
+const Mobilebuttons = Mobileslider.querySelectorAll('.mobile-btn');
+let MobileactiveIndex = 0;
 
 // Define the data for each button
-const buttonData = [
+const MobilebuttonData = [
   {
     paragraph: "Ut nisi nulla, vulputate quis feugiat sed, semper non massa. Sed tincidunt viverra bibendum. In lacus leo, laoreet et purus a, dapibus feugiat ex. Praesent scelerisque nulla efficitur nunc laoreet, et laoreet sem posuere. Sed posuere velit id justo tristique, non facilisis neque tincidunt.",
     imageSrc: "logo-intuit.png",
@@ -36,20 +36,20 @@ const buttonData = [
 ];
 
 // Add click event listeners to the buttons
-buttons.forEach((button, index) => {
+Mobilebuttons.forEach((button, index) => {
   button.addEventListener('click', () => {
-    setActiveButton(index);
+    setActiveMobileButton(index);
     updateSliderContent(index);
   });
 });
 
 // Set the initial active button
-setActiveButton(activeIndex);
-updateSliderContent(activeIndex);
+setActiveMobileButton(MobileactiveIndex);
+updateSliderContent(MobileactiveIndex);
 
 // Function to set the active button
-function setActiveButton(index) {
-  buttons.forEach((button, buttonIndex) => {
+function setActiveMobileButton(index) {
+  Mobilebuttons.forEach((button, buttonIndex) => {
     if (buttonIndex === index) {
       button.classList.add('active');
       button.querySelector('p').classList.remove('invisible');
@@ -62,7 +62,7 @@ function setActiveButton(index) {
 
 // Function to update the slider content
 function updateSliderContent(index) {
-  const activeButtonData = buttonData[index];
+  const activeButtonData = MobilebuttonData[index];
 
   // Update the text inside the leftpre-button
   const leftpreButton = document.querySelector('.mobile-sliderbutton');
@@ -88,8 +88,8 @@ function updateSliderContent(index) {
   sliderTitle.textContent = newTitle;
 
   // Scroll to the active button
-  const buttonOffset = buttons[index].offsetLeft;
-  slider.scrollTo({
+  const buttonOffset = Mobilebuttons[index].offsetLeft;
+  Mobileslider.scrollTo({
     left: buttonOffset,
     behavior: 'smooth'
   });
@@ -98,10 +98,10 @@ function updateSliderContent(index) {
 // Function to handle scroll event
 function handleScroll(event) {
   const scrollLeft = event.target.scrollLeft;
-  let closestButton = buttons[0];
+  let closestButton = Mobilebuttons[0];
   let minDistance = Math.abs(scrollLeft - closestButton.offsetLeft);
 
-  buttons.forEach((button) => {
+  Mobilebuttons.forEach((button) => {
     const distance = Math.abs(scrollLeft - button.offsetLeft);
     if (distance < minDistance) {
       minDistance = distance;
@@ -109,11 +109,11 @@ function handleScroll(event) {
     }
   });
 
-  const activeIndex = Array.from(buttons).indexOf(closestButton);
-  setActiveButton(activeIndex);
-  updateSliderContent(activeIndex);
+  const MobileactiveIndex = Array.from(Mobilebuttons).indexOf(closestButton);
+  setActiveMobileButton(MobileactiveIndex);
+  updateSliderContent(MobileactiveIndex);
 }
 
 // Add scroll event listener to the slider container
-slider.addEventListener('scroll', handleScroll);
+Mobileslider.addEventListener('scroll', handleScroll);
 
