@@ -866,7 +866,6 @@ opacity: 1;
   border: none;
   border-bottom: 1px solid #EAEAEA; /* Set the bottom border */
   background: transparent;
-  padding: 5px;
   margin-bottom: 20px;
   /* width: 419px; */
   width: 81%;
@@ -1549,6 +1548,7 @@ opacity: 1;
 margin-left: 8.6%;
 }
 .mobile-slider{
+  align-items: center;
   width: 91.6%;
   transform: translateX(9.2%);
   position: relative;
@@ -2615,7 +2615,118 @@ display: none;
   flex-direction: column;
   position: relative;
 }
+.footer{
+  position: relative;
+  gap: 0px;
+  margin-top: 150px;
+  height: 1048px;
+  flex-direction: column;
+}
+.Form{
+  height: 443px;
+  margin-top: 70px;
+  width: 91.4%;
+}
+.form-headline{
+  /* height: 71px; */
+  /* width: 72%; */
+  text-align: left;
+font: normal normal normal 28px/43px Cooper Hewitt;
+letter-spacing: 0px;
+color: #FFFFFF;
+opacity: 1;
+}
+.my-form p{
+    /* height: 71px; */
+  /* width: 72%; */
+  text-align: left;
+font: normal normal normal 28px/43px Cooper Hewitt;
+letter-spacing: 0px;
+color: #FFFFFF;
+opacity: 1;
+margin-bottom: 0;
+}
+.input1{
+  margin-top: 50px; 
+}
+.input2{
+  margin-bottom: 0%;
+}
+#fname{
+  margin-bottom: 41px;
+}
+#lname {
+  margin-bottom: 0%;  
+}
+.my-form button {
+  margin-top: 32px;
+  margin-bottom: 62.2px;
+  height: 54px;
+  font-size: 16px;
+}
+.my-form{
+  /* height: 443px; */
+  width: 93%;
+  margin-top: 49.5px;
+  margin-left: 34px;
+}
+.important-links{
+  margin-top: 88px;
+  gap: 30px;
+  padding-top: 0px;
+  width: 68%;
+  margin-left: 8.6%;
+}
+.main-link{
+  padding-bottom: 0px;
+  text-align: left;
+font: normal normal medium 14px/28px Cooper Hewitt;
+letter-spacing: 1.68px;
+color: #FFFFFF;
+text-transform: uppercase;
+opacity: 1;
+}
+.secondary-link{
+  text-align: left;
+  font: normal normal normal 14px/22px Cooper Hewitt;
+  letter-spacing: 0.14px;
+  color: #FFFFFF;
+  text-transform: uppercase;
+  opacity: 1;
+  line-height: 14px;
+}
+.ending-text{
+  text-align: left;
+font: normal normal normal 10px/24px Cooper Hewitt;
+letter-spacing: 0.6px;
+color: #FFFFFF;
+opacity: 1;
+width: 76%;
+right: 0%;
+left: 8.6%;
+bottom: 0%;
+top: 0%;
+top: 942.5px;
 
+}
+.logos-container {
+ position: absolute;
+  margin-top:0;
+  margin-left: 0;
+  padding: 0;
+  right: 0;
+  top: 57.9%;
+  /* top: 605px; */
+  width: 26%;
+  height: 272.5px;
+  /* margin-top: 106.5px; */
+  border: 1px solid rgba(255, 255, 255, 0.51);
+  border-bottom-left-radius: 12px;
+  border-top-left-radius: 12px;
+}
+.main-link{
+  margin-bottom: 20px;
+}
 }
 
 @media only screen and (max-width: 630px){
