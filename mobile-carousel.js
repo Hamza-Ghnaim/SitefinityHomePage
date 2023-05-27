@@ -39,13 +39,13 @@ const MobilebuttonData = [
 Mobilebuttons.forEach((button, index) => {
   button.addEventListener('click', () => {
     setActiveMobileButton(index);
-    updateSliderContent(index);
+    updateMobleSliderContent(index);
   });
 });
 
 // Set the initial active button
 setActiveMobileButton(MobileactiveIndex);
-updateSliderContent(MobileactiveIndex);
+updateMobleSliderContent(MobileactiveIndex);
 
 // Function to set the active button
 function setActiveMobileButton(index) {
@@ -61,7 +61,7 @@ function setActiveMobileButton(index) {
 }
 
 // Function to update the slider content
-function updateSliderContent(index) {
+function updateMobleSliderContent(index) {
   const activeButtonData = MobilebuttonData[index];
 
   // Update the text inside the leftpre-button
@@ -111,7 +111,7 @@ function handleScroll(event) {
 
   const MobileactiveIndex = Array.from(Mobilebuttons).indexOf(closestButton);
   setActiveMobileButton(MobileactiveIndex);
-  updateSliderContent(MobileactiveIndex);
+  updateMobleSliderContent(MobileactiveIndex);
 }
 
 // Add scroll event listener to the slider container
