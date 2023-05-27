@@ -6,6 +6,12 @@ window.addEventListener('scroll', function() {
   });
   
   // Set initial color with slight orange on the left
+  if (window.innerWidth <= 430) {
+  var initialColor = 'linear-gradient(to right, #DA6123 18%, #EAEAEA 5%, #EAEAEA)';
+  }
+else{
   var initialColor = 'linear-gradient(to right, #DA6123 5%, #EAEAEA 5%, #EAEAEA)';
+
+}
   document.querySelector('.navbar-slider').style.background = initialColor;
   

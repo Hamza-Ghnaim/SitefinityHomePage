@@ -2744,6 +2744,9 @@ top: 942.5px;
   }
 }
 @media only screen and (max-width:431px){
+  .navbar-slider{
+    background:linear-gradient(to right, rgb(218, 97, 35) 5%, rgb(218, 97, 35) 0%, rgb(234, 234, 234) 0%);
+  }
   .navbar-section {
     height: 100px;
   }
@@ -2911,4 +2914,70 @@ letter-spacing: 0.07px;
 color: #101135;
 opacity: 1;
 }
+.HeaderText{
+  margin-top: 140px;
+}
+.HeaderText1{
+  margin-left: 8.3%;
+  /* text-align: left; */
+font: normal normal 300 34px/52px Cooper Hewitt;
+font-size: 32px;
+letter-spacing: 0px;
+color: #101135;
+text-transform: uppercase;
+opacity: 1;
+height: 35px;
+margin-bottom: 15.5px;
+text-align: left;
+}
+.HeaderText2 {
+  width: 77%;
+  font: normal normal 300 24px/37px Plantin MT Pro;
+  font-size: 22px;
+  letter-spacing: 0.6px;
+  color: #101135;
+  opacity: 1;
+  text-align: left;
+  height: 61px;
+  margin-bottom: 37px;
+  margin-left: 8.3%;
+}
+.HeaderText3{
+  margin-left: 8.3%;
+  width: 91.3%;
+  text-align: left;
+font: normal normal normal 15px/28px Cooper Hewitt;
+letter-spacing: 0.07px;
+color: #101135;
+margin-top: 0;
+opacity: 1;
+}
+.HeaderTextInner {
+  width: 100%;
+  align-items: normal;
+  /* margin-left: 8.3%; */
+}
+.cards-section{margin-top: 70px;
+}
+.card-headline{
+  text-align: left;
+font: normal normal 600 24px/29px CooperHewitt-Semibold;
+letter-spacing: 0.6px;
+color: #101135;
+text-transform: uppercase;
+opacity: 1;
+}
+.cards-button{
+  width: 65.3%;
+  height: 73px;
+}
+.Capabilites-section{
+  margin-top: 250px;
+}
+.capabilities-button{
+  width: 289px;
+  width: 72%;
+  }
+.footer{
+  background: transparent linear-gradient(0deg, #DA6123 0%, #101135 50%) 0% 0% no-repeat padding-box;}
 }
