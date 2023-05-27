@@ -1,7 +1,11 @@
 window.addEventListener('scroll', function() {
     var scrollPercentage = window.scrollY / (document.body.scrollHeight - window.innerHeight);
     var orangeWidth = Math.min((scrollPercentage * 100) , 100);
-    var color = 'linear-gradient(to right, #DA6123 5%, #DA6123 ' + orangeWidth + '%, #EAEAEA ' + orangeWidth + '%)';
+    if (window.innerWidth <= 430) {
+      color = 'linear-gradient(to right, #DA6123 18%, #DA6123 ' + orangeWidth + '%, #EAEAEA ' + orangeWidth + '%)';
+    } else {
+      color = 'linear-gradient(to right, #DA6123 5%, #DA6123 ' + orangeWidth + '%, #EAEAEA ' + orangeWidth + '%)';
+    }
     document.querySelector('.navbar-slider').style.background = color;
   });
   
