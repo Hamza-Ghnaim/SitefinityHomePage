@@ -1406,7 +1406,19 @@ height:35.29px ;
   width: 92%;
   margin-left: 2%;
 }
- .search-input{
+
+.Mobileinput-div {
+  height: 100%;
+  width: 82%;
+  margin-left: 4%;
+}
+ 
+.search-input{
+  height: 100%;
+  width: 100%;
+  border: none;
+ }
+ .Mobilesearch-input{
   height: 100%;
   width: 100%;
   border: none;
@@ -1429,6 +1441,20 @@ height:35.29px ;
   width: 83%;
   height: 54px;
  }
+
+ .MobilesearchInput-inner{
+  position: absolute;
+  top: 42px;
+  border-radius: 5px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-start;
+  background: white;
+  width: 83%;
+  height: 54px;
+ }
+
  textarea:focus, input:focus{
   outline: none;
 }
@@ -1446,6 +1472,43 @@ height:35.29px ;
   left: -3px;
   top: 101%;
 }
+.MobilesearchInput-container {
+  display: none;
+  position: absolute;
+  background-color:#EAEAEA;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  width: 103%;
+  height: 100vh;
+  right: 0;
+  left: -3px;
+  top: 101%;
+    }
+
+    .MobilesearchInput-overlay {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background-color: rgba(0, 0, 0, 0.5); /* Adjust the opacity as desired */
+      z-index: 1;
+    }
+
+    .MobilesearchInput-inner {
+      position: absolute;
+      top: 42px;
+      border-radius: 5px;
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      justify-content: flex-start;
+      background: white;
+      width: 83%;
+      height: 54px;
+    }
+
 /* .navbar-content input {
   width: 17.8%;
   margin-right: 0%;
