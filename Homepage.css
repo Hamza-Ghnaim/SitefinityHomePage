@@ -2770,18 +2770,18 @@ top: 942.5px;
     width: 101.8%;
     height:225px ;
   }
-  .third1{
+  .third1 {
     width: 448px;
-    height:448px ;
-    top: -94px;
+    height: 448px;
+    top: -83px;
     right: -66.1%;
-  }
-  .third2{
+}
+  .third2 {
     width: 448px;
-    height:448px ;
-    top: -94px;
+    height: 448px;
+    top: -83px;
     right: -66.1%;
-  }
+}
   .Organizations-banner {
     position: absolute;
     top: 30%;
@@ -2832,7 +2832,7 @@ opacity: 1;
   margin-top: 100px;
 }
 .scrollEncloser {
-  width: 83%;
+  width: 88%;
 }
 .scrollEHeader{
   color: var(---101135);
@@ -2981,3 +2981,177 @@ opacity: 1;
 .footer{
   background: transparent linear-gradient(0deg, #DA6123 0%, #101135 50%) 0% 0% no-repeat padding-box;}
 }
+@media only screen and (max-width:424px){
+  .mobile-sliderfname{
+    font-size: 14px;
+  }
+  .Drive-result{
+    width: 99%;
+  }
+  .scrollEncloser {
+    width: 93%;
+}
+.HeaderText1{
+  font-size: 28px;
+}
+.HeaderText2 {
+  width: 72%;
+  font-size: 21px;
+}
+.HeaderText3 {
+  width: 89%;
+}
+.ending-text{
+  font-size: 8px;
+}
+
+.secondary{
+  height: 210px;
+}
+.Organizations-Perform{
+  font: normal normal normal 38px/58px Cooper Hewitt;
+}
+.third1 {
+  width: 435px;
+}
+.third2 {
+  width: 435px;
+}
+.TeamsWorkbtn{
+  height: 65px;
+  font-size: 15px;
+}
+.more-Text P {
+  font: normal normal normal 13px/24px Cooper Hewitt
+}
+.mobile-commatext p {
+  width: 75%;
+  font: normal normal normal 12px/26px Cooper Hewitt
+}
+}
+@media only screen and (max-width:374px){
+  .mobile-sliderfname{
+    font-size: 14px;
+  }
+  .third1 {
+    width: 435px;
+    top: -99px;
+    right: -94.1%;
+}
+.third2 {
+  width: 435px;
+  top: -99px;
+  right: -94.1%;
+}
+.scrollEHeader{
+  font-size: 23px;
+}
+.scrollEncloser {
+  width: 90%;
+}
+#textDiv{
+  font-size: 14px;
+}
+.scroll-Button{
+  font-size: 15px;
+}
+.HeaderText1{
+  font-size: 24px;
+}
+.HeaderText2 {
+  width: 76%;
+  font-size: 19px;
+}
+.HeaderText3{
+font-size:13px;
+}
+.card-headline {
+ font-size: 22px;
+}
+.card-headline {
+  text-align: left;
+  font: normal normal 600 22px/29px CooperHewitt-
+}
+.card-description1{
+  font: normal normal normal 13px/24px Cooper Hewitt;
+
+}
+.card-description2{
+  font: normal normal normal 13px/24px Cooper Hewitt;
+
+}
+.card-description3{
+  font: normal normal normal 13px/24px Cooper Hewitt;
+
+}
+.card-description4{
+  font: normal normal normal 13px/24px Cooper Hewitt;
+
+}
+.capabilities-text {
+  font: normal normal normal 12px/24px Cooper Hewitt
+}
+.capabilities-header1 {
+    font: normal normal 300 21px/35px Plantin MT Pro;
+}
+.capabilities-header2 {
+  font-size: 27px;
+}
+.title{
+  font-size: 22px;
+}
+.mobile-slidertitle {
+  font: normal normal normal 12px/28px Cooper Hewitt
+}
+  .mobile-sliderlogo {
+    padding: 2px;
+    margin-top: 42px;
+    width: 149px;
+    height: 57px;
+}
+.mobile-sliderfname {
+  font-size: 11px;
+}
+.mobile-commatext p {
+  width: 75%;
+  font: normal normal normal 11px/24px Cooper Hewitt
+}
+.mobile-sliderbutton {
+  height: 60px;
+}
+.my-form p {
+  font: normal normal normal 20px/37px Cooper Hewitt;
+}
+.input1 {
+  font-size: 9px;
+}
+.input2 {
+  font-size: 9px;
+}
+.my-form button {
+  height: 50px;
+  font-size: 11px;
+}
+.important-links {
+  gap: 20px;
+  font-size: 9px;
+}
+.secondary-link{
+  font-size: 10px;
+}
+.logos-container {
+  top: 55.9%;
+  width: 28%;
+  height: 233.5px
+}
+.logos-inner {
+  margin-left: 11.8%;
+  margin-top: 19.7px;
+}
+.ending-text{
+  width: 90%;
+  top: 914.5px;
+}
+}
+
+
