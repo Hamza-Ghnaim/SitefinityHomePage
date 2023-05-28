@@ -14,6 +14,7 @@
     <!-- <script src="Homepage.js"></script> -->
     <link rel="stylesheet" href="Homepage.css" />
     <title>Homepage</title>
+   
   </head>
   <body>
     <div class="outer">
@@ -22,16 +23,8 @@
           <div class="logo">
             <img src="NavbarLogo.png" alt="MyCrystal Group" />
           </div>
-          <!-- <div class="navbar-content">
-            <a href="#">ABOUT</a>
-            <a href="#">CAPABILITIES</a>
-            <a href="#">INSIGHTS</a>
-            <a href="#">EVENTS</a>
-            <a href="#">CAREERS</a>
-            <img src="Group 8.svg" alt="description of your image">
-            <input type="text">
-          </div> -->
-          <div class="mobile-navbarContent">
+
+          <!-- <div class="mobile-navbarContent">
             <div class="search-image">
               <img src="Group 8.svg" id="search-toggle" alt="description of your image"> 
             </div>
@@ -46,7 +39,8 @@
               <li><a href="#">EVENTS</a></li>
               <li><a href="#">CAREERS</a></li>
             </ul>
-          </div>
+          </div> -->
+
           <div class="navbar-content">
             <a href="#">ABOUT</a>
             <a href="#">CAPABILITIES</a>
@@ -54,9 +48,17 @@
             <a href="#">EVENTS</a>
             <a href="#">CAREERS</a>
             <img id="search-icon" src="Group 8.svg" alt="description of your image">
-            <input id="search-input" type="text">
+            <div class="searchInput-container">
+              <div class="searchInput-inner">
+                <div class="input-div">
+                  <input class="search-input" type="text" placeholder="Search ">
+                   </div>
+                  <div>
+                    <img src="Group 8.svg" alt="description of your image">
+                  </div>
+              </div>
+            </div>
           </div>
-          
         </div>
         <div class="navbar-slider">
         </div>
@@ -466,7 +468,7 @@
     <script src="../functionality/navbar.js"></script>
     <script src="../functionality/banner.js"></script>
     <script src="menu-toggle.js"></script>
-    <script src="search-toggle.js"></script>
+    <!-- <script src="search-toggle.js"></script> -->
     <script src="../functionality/searchbar.js"></script>
   </body>
 </html>
