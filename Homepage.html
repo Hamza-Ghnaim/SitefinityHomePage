@@ -70,13 +70,13 @@
             </div>
           </div>
           <div class="capabilities-menu">
-            <!-- Add your menu items here -->
-            <h1>this is the hover navigation menu</h1>
-            <h1>this is the hover navigation menu</h1>
-            <h1>this is the hover navigation menu</h1>
-            <h1>this is the hover navigation menu</h1>
-            <h1>this is the hover navigation menu</h1>
-            <h1>this is the hover navigation menu</h1>
+            <div class="top-menu">
+              <div class="left-options"></div>
+              <div class="right-options"></div>
+            </div>
+            <div class="bottom-menu">
+
+            </div>
           </div>
         </div>
         <div class="navbar-slider">
@@ -490,23 +490,35 @@
     <script src="search-toggle.js"></script>
     <script src="../functionality/searchbar.js"></script>
     <script>
- const capabilitiesLink = document.querySelector('.capabilities-link');
+//  const capabilitiesLink = document.querySelector('.capabilities-link');
+// const capabilitiesMenu = document.querySelector('.capabilities-menu');
+
+// capabilitiesLink.addEventListener('mouseenter', () => {
+//   capabilitiesMenu.style.display = 'block'; // Show the capabilities menu on mouse enter
+// });
+
+// capabilitiesLink.addEventListener('mouseleave', () => {
+//   capabilitiesMenu.style.display = 'none'; // Hide the capabilities menu on mouse leave
+// });
+
+// capabilitiesMenu.addEventListener('mouseenter', () => {
+//   capabilitiesMenu.style.display = 'block'; // Keep the capabilities menu displayed when hovering over it
+// });
+
+// capabilitiesMenu.addEventListener('mouseleave', () => {
+//   capabilitiesMenu.style.display = 'none'; // Hide the capabilities menu on mouse leave from the menu
+// });
+const capabilitiesLink = document.querySelector('.capabilities-link');
 const capabilitiesMenu = document.querySelector('.capabilities-menu');
 
-capabilitiesLink.addEventListener('mouseenter', () => {
-  capabilitiesMenu.style.display = 'block'; // Show the capabilities menu on mouse enter
-});
+capabilitiesLink.addEventListener('click', (event) => {
+  event.preventDefault(); // Prevent the link from redirecting
 
-capabilitiesLink.addEventListener('mouseleave', () => {
-  capabilitiesMenu.style.display = 'none'; // Hide the capabilities menu on mouse leave
-});
-
-capabilitiesMenu.addEventListener('mouseenter', () => {
-  capabilitiesMenu.style.display = 'block'; // Keep the capabilities menu displayed when hovering over it
-});
-
-capabilitiesMenu.addEventListener('mouseleave', () => {
-  capabilitiesMenu.style.display = 'none'; // Hide the capabilities menu on mouse leave from the menu
+  if (capabilitiesMenu.style.display === 'flex') {
+    capabilitiesMenu.style.display = 'none'; // Hide the capabilities menu if it's already visible
+  } else {
+    capabilitiesMenu.style.display = 'flex'; // Show the capabilities menu if it's hidden
+  }
 });
 
 
