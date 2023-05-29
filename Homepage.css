@@ -53,20 +53,205 @@ body {
   margin-left: -3px;
   display: none;
   position: absolute;
-  top: 95%;
+  top: 90%;
   left: 0;
-  background-color:#eaeaea;
+  /* background-color:#e4e4e4; */
+  background-color:#fbf9f9;
   padding: 10px;
   z-index: 1;
-  flex-direction: row;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
 }
 .top-menu{
+
   display: flex;
   flex-direction: row;
   height: 534px;
+  /* gap: 61px; */
+  gap: 3.7%;
+  width: 102%;
+    margin-left:4px;
+margin-top: 69px;
+}
+
+.left-options{
+  display: flex;
+  flex-direction: column;
+  gap: 27.3px;
+  margin-left: 143px;
+  width: 25.1%;
+  /* width: 382px; */
+
+}
+
+.leftOptions-header{
+  font-size: 28px;
+  line-height: 43px;
+}
+
+.leftOptions-text{
+  font-size: 18px;
+  margin-top: -12px;
+ /* letter-spacing: 5px; */
+  line-height: 32px;
+}
+
+.leftOptions-button{
+  width: 74%;
+  height: 73px;
+  border-radius: 5px;
+  background-color: transparent;
+  font-size: 16px;
+  line-height: 20px;
+}
+
+.right-options{
+  /* width: 859px; */
+  width: 52%;
+  display: flex;
+  flex-direction: column;
+}
+
+.rightOptions-header1{
+  display: flex;
+  flex-direction: row;
+  /* gap: 60px; */
+  gap: 7%;
+  font-size: 20px;
+  line-height: 26px;
+}
+.rightOptions-header2{
+  margin-top: 50px;
+  display: flex;
+  flex-direction: row;
+  /* gap: 60px; */
+  gap: 7%;
+  font-size: 20px;
+  line-height: 26px;
+}
+
+.header1-second{
+/* margin-left: 56px; */
+margin-left: 7%;
+}
+
+.header2-second{
+  margin-left: 1%;
+}
+
+.header2-third{
+  margin-left: 14.5%;
+}
+
+.gray-line{
+
+margin-top: 7px;
   width: 100%;
+  height: 1px;
+  background: #EAEAEA;
+}
+
+.rightOptions-choices1{
+  display: flex;
+  flex-direction: column;
+  gap: 21px;
+}
+
+.rightOptions-choices21{
+  display: flex;
+  flex-direction: column;
+  gap: 21px;
+}
+
+.optionsContent1{
+  display: flex;
+  flex-direction: row;
+  margin-top: 27.5px;
+}
+
+.optionsContent21{
+  display: flex;
+  flex-direction: row;
+  margin-top: 27.5px;
+}
+
+
+.optionsContent2{
+  display: flex;
+  flex-direction: row;
+}
+
+.optionsContent22{
+  display: flex;
+  flex-direction: row;
+}
+
+.optionsContent3{
+  display: flex;
+  flex-direction: row;
+}
+
+.optionsContent23{
+  display: flex;
+  flex-direction: row;
+}
+
+.option12{
+  margin-left: 23%;
+}
+
+.option212{
+  margin-left: 12%;
+
+}
+
+.option213{
+  margin-left: 5%;
+}
+
+.option13{
+  margin-left: 14.5%;
+
+}
+
+.option22{
+margin-left: 11%;
+}
+
+.option222{
+  margin-left: 14%;
+  }
+.option223{
+  margin-left: 9%;
+}
+.option23{
+  margin-left: 19%;
+
+}
+
+.option32{
+margin-left: 5.5%;
+}
+
+.option232{
+  margin-left: 12.5%;
+}
+.option33{
+margin-left: 21.2%;
+}
+
+.optionsContent P{
+  font-size: 15px;
+  line-height: 20px;
+}
+
+.bottom-menu{
+  margin-left:4px;
+  height: 180px;
+width: 102%; 
+background-color:#e4e4e4;
+
 }
 
 .images-container{
