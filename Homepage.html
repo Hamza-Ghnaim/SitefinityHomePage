@@ -53,7 +53,7 @@
 
           <div class="navbar-content">
             <a href="#">ABOUT</a>
-            <a href="#">CAPABILITIES</a>
+            <a href="#" class="capabilities-link">CAPABILITIES</a>
             <a href="#">INSIGHTS</a>
             <a href="#">EVENTS</a>
             <a href="#">CAREERS</a>
@@ -68,6 +68,15 @@
                   </div>
               </div>
             </div>
+          </div>
+          <div class="capabilities-menu">
+            <!-- Add your menu items here -->
+            <h1>this is the hover navigation menu</h1>
+            <h1>this is the hover navigation menu</h1>
+            <h1>this is the hover navigation menu</h1>
+            <h1>this is the hover navigation menu</h1>
+            <h1>this is the hover navigation menu</h1>
+            <h1>this is the hover navigation menu</h1>
           </div>
         </div>
         <div class="navbar-slider">
@@ -480,5 +489,27 @@
     <script src="menu-toggle.js"></script>
     <script src="search-toggle.js"></script>
     <script src="../functionality/searchbar.js"></script>
+    <script>
+ const capabilitiesLink = document.querySelector('.capabilities-link');
+const capabilitiesMenu = document.querySelector('.capabilities-menu');
+
+capabilitiesLink.addEventListener('mouseenter', () => {
+  capabilitiesMenu.style.display = 'block'; // Show the capabilities menu on mouse enter
+});
+
+capabilitiesLink.addEventListener('mouseleave', () => {
+  capabilitiesMenu.style.display = 'none'; // Hide the capabilities menu on mouse leave
+});
+
+capabilitiesMenu.addEventListener('mouseenter', () => {
+  capabilitiesMenu.style.display = 'block'; // Keep the capabilities menu displayed when hovering over it
+});
+
+capabilitiesMenu.addEventListener('mouseleave', () => {
+  capabilitiesMenu.style.display = 'none'; // Hide the capabilities menu on mouse leave from the menu
+});
+
+
+    </script>
   </body>
 </html>

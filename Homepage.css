@@ -47,6 +47,19 @@ body {
   border-radius: 12px;
   padding-left: 70px;
 }
+.capabilities-menu {
+  width: 102%;
+  height: 714px;
+  margin-left: -3px;
+  display: none;
+  position: absolute;
+  top: 95%;
+  left: 0;
+  background-color: #fff;
+  padding: 10px;
+  z-index: 1;
+}
+
 .images-container{
   position: relative;
 background: transparent linear-gradient(0deg, #DA6123 0%, #101135 50%) 0% 0% no-repeat padding-box;
