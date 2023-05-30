@@ -69,6 +69,7 @@
               </div>
             </div>
           </div>
+          
           <div class="capabilities-menu">
             <div class="top-menu">
               <div class="left-options">
@@ -120,7 +121,7 @@
                   <div class="optionsContent23">
                     <P class="option231">TECH ENABLMENT</P>
                     <P class="option232">ANALYTICS</P>
-                    <!-- <P class="option233"></P> -->
+                    <P class="option233"></P>
                   </div>
                 </div>
                 <div class="rightOptions-header22"></div>
@@ -128,7 +129,12 @@
               </div>
             </div>
             <div class="bottom-menu">
-              bottom
+              <div class="bottomMenu-inner">
+                <div class="rightOptions-header1">
+                <p> Header</p>
+                </div>
+                <div class="gray-line"></div>
+              </div>
             </div>
           </div>
         </div>
@@ -561,16 +567,32 @@
 // capabilitiesMenu.addEventListener('mouseleave', () => {
 //   capabilitiesMenu.style.display = 'none'; // Hide the capabilities menu on mouse leave from the menu
 // });
+
+
+// const capabilitiesLink = document.querySelector('.capabilities-link');
+// const capabilitiesMenu = document.querySelector('.capabilities-menu');
+
+// capabilitiesLink.addEventListener('click', (event) => {
+//   event.preventDefault(); // Prevent the link from redirecting
+
+//   if (capabilitiesMenu.style.display === 'flex') {
+//     capabilitiesMenu.style.display = 'none'; // Hide the capabilities menu if it's already visible
+//   } else {
+//     capabilitiesMenu.style.display = 'flex'; // Show the capabilities menu if it's hidden
+//   }
+// });
+
+
 const capabilitiesLink = document.querySelector('.capabilities-link');
 const capabilitiesMenu = document.querySelector('.capabilities-menu');
 
 capabilitiesLink.addEventListener('click', (event) => {
   event.preventDefault(); // Prevent the link from redirecting
 
-  if (capabilitiesMenu.style.display === 'flex') {
+  if (capabilitiesMenu.style.display === 'block') {
     capabilitiesMenu.style.display = 'none'; // Hide the capabilities menu if it's already visible
   } else {
-    capabilitiesMenu.style.display = 'flex'; // Show the capabilities menu if it's hidden
+    capabilitiesMenu.style.display = 'block'; // Show the capabilities menu if it's hidden
   }
 });
 
