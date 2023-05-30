@@ -152,7 +152,7 @@ margin-top: 69px;
 
 .right-options{
   /* width: 859px; */
-  width: 52%;
+  width: 59%;
   display: flex;
   flex-direction: column;
 }
@@ -161,7 +161,7 @@ margin-top: 69px;
   display: flex;
   flex-direction: row;
   /* gap: 60px; */
-  gap: 7%;
+  /* gap: 7%; */
   font-size: 20px;
   line-height: 26px;
 }
@@ -170,28 +170,41 @@ margin-top: 69px;
   display: flex;
   flex-direction: row;
   /* gap: 60px; */
-  gap: 7%;
+  /* gap: 7%; */
   font-size: 20px;
   line-height: 26px;
 }
 
+.header1-first{
+  width: 29%;
+}
+
 .header1-second{
-/* margin-left: 56px; */
-margin-left: 7%;
+width: 33%;
+}
+
+.header1-third{
+  width: 38%;
+}
+
+.header2-first{
+  width: 29%;
 }
 
 .header2-second{
-  margin-left: 1%;
+  /* margin-left: 1%; */
+  width: 33%;
 }
 
 .header2-third{
-  margin-left: 14.5%;
+  /* margin-left: 14.5%; */
+  width: 38%;
 }
 
 .gray-line{
 
 margin-top: 7px;
-  width: 100%;
+  width: 94%;
   height: 1px;
   background: #EAEAEA;
   
@@ -235,6 +248,8 @@ margin-top: 7px;
 .BottomoptionsContent{
   display: flex;
   flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
   margin-top: 16.5px;
 }
 
@@ -258,69 +273,95 @@ margin-top: 7px;
   flex-direction: row;
 }
 
+.option11{
+width: 29%;
+}
+
 .option12{
-  margin-left: 23%;
+  width:33%;
+}
+
+.option21{
+  width:29%
+}
+
+.option211{
+  width: 29%;
 }
 
 .option212{
-  margin-left: 12%;
-
+  /* margin-left: 12%; */
+  width: 33%;
 }
 
 .Buttomoption11{
   /* margin-left: 12%; */
+  /* width: 29%; */
   font-size: 15px;
   line-height: 20px;
 
 }
 
 .Buttomoption12{
-  margin-left: 17%;
+  /* margin-left: 17%; */
   font-size: 15px;
   line-height: 20px;
+  /* width: 33%; */
 
 }
 
 .Buttomoption13{
-  margin-left: 17%;
+  /* margin-left: 17%; */
   font-size: 15px;
   line-height: 20px;
-
+  /* width: 38%; */
 }
 
 .option213{
-  margin-left: 5%;
+  /* margin-left: 5%; */
+  width: 38%;
 }
 
-.option13{
-  margin-left: 14.5%;
-
-}
-
-.option22{
-margin-left: 11%;
+.option221{
+  width: 29%;
 }
 
 .option222{
-  margin-left: 14%;
-  }
-.option223{
-  margin-left: 9%;
+  width: 33%;
 }
-.option23{
-  margin-left: 19%;
 
+.option223{
+  width: 38%;
+}
+.option13{
+width: 38%;
+}
+
+.option22{
+  width: 33%;
+}
+
+.option23{
+ width: 38%;
+}
+
+.option31{
+  width: 29%;
 }
 
 .option32{
-margin-left: 5.5%;
+width: 33%;}
+
+.option231{
+  width: 29%; 
 }
 
 .option232{
-  margin-left: 12.5%;
+  /* margin-left: 12.5%; */
+  width: 33%;
 }
 .option33{
-margin-left: 21.2%;
+  width: 38%;  
 }
 
 .optionsContent P{
@@ -2085,6 +2126,62 @@ opacity: 1;
 background: transparent;
 margin-top: 15px;
 }
+
+/* @media only screen and (max-width: 1530px) {
+  .rightOptions-header1{
+    font-size: 18px;
+  }
+  .rightOptions-header2{
+    font-size: 18px;
+  }
+  .leftOptions-text {
+    font-size: 15px;
+  }
+  .optionsContent1 {
+    font-size: 13px;
+}
+.optionsContent2 {
+  font-size: 13px;
+}
+.optionsContent3{
+  font-size: 13px;
+}
+.option12 {
+  margin-left: 24%;
+}
+.option22 {
+  margin-left: 13.5%;
+}
+.option32 {
+  margin-left: 8.5%;
+}
+.optionsContent21 {
+  font-size: 13px;
+}
+.optionsContent22 {
+  font-size: 13px;
+}
+.optionsContent23 {
+  font-size: 13px;
+}
+.option212 {
+  margin-left: 13%;
+}
+.option213 {
+  margin-left: 9%;
+}
+.option222 {
+  margin-left: 15%;
+}
+.option223 {
+  margin-left: 12%;
+}
+.option232 {
+  margin-left: 13.5%;
+}
+} */
+
+
 @media only screen and (max-width: 1440px) {
   .Organizations-Perform{
     font-size: 50px;
@@ -2205,6 +2302,7 @@ margin-top: 15px;
 .HeaderText {
  margin-top: 120px;
 }
+
 }
 /* ////////////////////////////////////////////////// 
 //////////////////////////////////////////////////
@@ -2226,7 +2324,29 @@ margin-top: 15px;
 //////////////////////////////////////////////////
 //////////////////////////////////////////////////
 */
+/* @media only screen and (max-width: 1378px) {
+  .left-options {
 
+    width: 22.1%;
+  }
+  .right-options {
+    width: 54%;
+  }
+  header1 {
+}
+
+.left-options {
+    width: 24.1%;
+}
+.rightOptions-header1 {
+  font-size: 14px;    
+  gap: 0;
+}
+.header1-second {
+  margin-left: 0%;
+}
+
+} */
 @media only screen and (max-width: 1366px) {
   .logo img{
     width: 130%;
