@@ -204,7 +204,7 @@ width: 33%;
 .gray-line{
 
 margin-top: 7px;
-  width: 94%;
+  width: 95%;
   height: 1px;
   background: #EAEAEA;
   
@@ -379,7 +379,8 @@ flex-direction: row;
 }
 
 .bottom-menu button{
-  width: 290px;
+  /* width: 290px; */
+  width: 17.8%;
   height: 73px;
   margin-top: 60px;
   border-radius: 6px;
@@ -2127,59 +2128,6 @@ background: transparent;
 margin-top: 15px;
 }
 
-/* @media only screen and (max-width: 1530px) {
-  .rightOptions-header1{
-    font-size: 18px;
-  }
-  .rightOptions-header2{
-    font-size: 18px;
-  }
-  .leftOptions-text {
-    font-size: 15px;
-  }
-  .optionsContent1 {
-    font-size: 13px;
-}
-.optionsContent2 {
-  font-size: 13px;
-}
-.optionsContent3{
-  font-size: 13px;
-}
-.option12 {
-  margin-left: 24%;
-}
-.option22 {
-  margin-left: 13.5%;
-}
-.option32 {
-  margin-left: 8.5%;
-}
-.optionsContent21 {
-  font-size: 13px;
-}
-.optionsContent22 {
-  font-size: 13px;
-}
-.optionsContent23 {
-  font-size: 13px;
-}
-.option212 {
-  margin-left: 13%;
-}
-.option213 {
-  margin-left: 9%;
-}
-.option222 {
-  margin-left: 15%;
-}
-.option223 {
-  margin-left: 12%;
-}
-.option232 {
-  margin-left: 13.5%;
-}
-} */
 
 
 @media only screen and (max-width: 1440px) {
@@ -2348,6 +2296,32 @@ margin-top: 15px;
 
 } */
 @media only screen and (max-width: 1366px) {
+  .rightOptions-header1{
+    font-size: 16px;
+  }
+  .rightOptions-choices1{
+    font-size: 12px;
+  }
+  .rightOptions-header2{
+    font-size: 16px;
+  }
+  .rightOptions-choices21{
+    font-size: 12px;
+  }
+  .leftOptions-text{
+    font-size: 14px;
+  }
+  .Buttomoption11{
+    font-size: 12px;
+  }
+  .Buttomoption12{
+    font-size: 12px;
+
+  }
+  .Buttomoption13{
+    font-size: 12px;
+
+  }
   .logo img{
     width: 130%;
   }
@@ -2633,6 +2607,53 @@ font-size: 16px;
 }
 
 @media only screen and (max-width: 1022px){
+  .Buttomoption11{
+    font-size: 10px;
+  }
+  .Buttomoption12{
+    font-size: 10px;
+  }
+  .Buttomoption13{
+    font-size: 10px;
+  }
+  .BottomoptionsContent{
+  font-size: 10px;
+}
+
+  .rightOptions-header1 {
+    font-size: 12px;
+}
+.rightOptions-choices1 {
+  font-size: 8px;
+}
+.rightOptions-header2 {
+  font-size: 12px;
+}
+.rightOptions-choices21 {
+font-size: 8px;
+}
+  .leftOptions-header{
+    font-size: 26px;
+  }
+  .leftOptions-text {
+    font-size: 10px;
+}
+.leftOptions-button{
+  font-size: 10px;
+  width: 69%;
+    height: 68px;
+}
+.bottom-menu button{
+  font-size: 10px;
+  width: 16.8%;
+}
+.left-options{
+  margin-left: 114px;
+}
+.right-options {
+  width: 61%;
+}
+
   .logo{
     margin-left: 9%;
   }
@@ -2835,6 +2856,52 @@ font-size: 11px;
   bottom: 146px;
 }
 }
+@media only screen and (max-height:1080px){
+  .capabilities-menu{
+    top: 57.5%;
+  }
+}
+@media only screen and (max-height:1024px){
+  .capabilities-menu{
+    top: 57.5%;
+  }
+}
+@media only screen and (max-height: 960px){
+  .capabilities-menu{
+    top: 58.5%;
+  }
+}
+@media only screen and (max-height: 900px){
+  .capabilities-menu{
+    top: 59.5%;
+  }
+}
+@media only screen and (max-height: 864px){
+  .capabilities-menu{
+    top: 60.5%;
+  }
+}
+@media only screen and (max-height: 800px){
+  .capabilities-menu{
+    top: 61.5%;
+  }
+}
+@media only screen and (max-height: 768px){
+  .capabilities-menu{
+    top: 62.5%;
+  }
+}
+@media only screen and (max-height: 720px){
+  .capabilities-menu{
+    top: 63.5%;;
+  }
+}
+@media only screen and (max-height: 600px){
+  .capabilities-menu{
+    top: 67.5%;
+  }
+}
+
 
 @media only screen and (max-width: 767px){
   
