@@ -74,20 +74,21 @@ body {
 } */
 
 .capabilities-menu {
+  /* max-width: 1612px; */
   overflow-y:scroll;
   scrollbar-width: thin;
   scrollbar-color: transparent transparent;
   /* max-width: 1612px; */
-  overflow-x: hidden;
-  width: 100%;
+  /* overflow-x: hidden; */
+  width: 102%;
   height: 90vh;
   display: none;
   position: fixed;
-  top: 59.5%;
+  top: 55.5%;
   left: 50%;
   transform: translate(-50%, -50%);
   background-color: #fbf9f9;
-  padding: 10px;
+  /* padding: 10px; */
   z-index: 9999;
   flex-direction: column;
   justify-content: center;
@@ -106,14 +107,14 @@ body {
 }
 
 .top-menu{
-
+max-width: 1612px;
   display: flex;
   flex-direction: row;
   height: 534px;
   /* gap: 61px; */
   gap: 3.7%;
   background-color: #fbf9f9;
-  width: 102%;
+  width: 100%;
   margin-left:-9px;
 margin-top: 69px;
 }
@@ -193,7 +194,15 @@ margin-top: 7px;
   width: 100%;
   height: 1px;
   background: #EAEAEA;
+  
 }
+.black-line{
+
+  margin-top: 7px;
+    width: 100%;
+    height: 1px;
+    background: #cecece;
+  }
 
 .rightOptions-choices1{
   display: flex;
@@ -207,6 +216,10 @@ margin-top: 7px;
   gap: 21px;
 }
 
+.bottomOptions-choices{  display: flex;
+  flex-direction: column;}
+
+
 .optionsContent1{
   display: flex;
   flex-direction: row;
@@ -219,6 +232,11 @@ margin-top: 7px;
   margin-top: 27.5px;
 }
 
+.BottomoptionsContent{
+  display: flex;
+  flex-direction: row;
+  margin-top: 16.5px;
+}
 
 .optionsContent2{
   display: flex;
@@ -246,6 +264,27 @@ margin-top: 7px;
 
 .option212{
   margin-left: 12%;
+
+}
+
+.Buttomoption11{
+  /* margin-left: 12%; */
+  font-size: 15px;
+  line-height: 20px;
+
+}
+
+.Buttomoption12{
+  margin-left: 17%;
+  font-size: 15px;
+  line-height: 20px;
+
+}
+
+.Buttomoption13{
+  margin-left: 17%;
+  font-size: 15px;
+  line-height: 20px;
 
 }
 
@@ -290,17 +329,32 @@ margin-left: 21.2%;
 }
 
 .bottom-menu{
-  margin-left:-11px;
-  height: 180px;
-width: 102%; 
+height: 210px;
 background-color:#EAEAEA;
 display: flex;
 flex-direction: row;
+/* align-items: center; */
+/* justify-content: center; */
+}
+
+.bottom-menu button{
+  width: 290px;
+  height: 73px;
+  margin-top: 60px;
+  border-radius: 6px;
+  margin-left: 4.3%;
+  font-size: 16px;
+  line-height: 20px;
+  background: transparent;
+  /* margin-left: 70px; */
 }
 
 .bottomMenu-inner{
+  /* width: 938px; */
+  width: 57%;
  display: flex;
  flex-direction: column;
+
  margin-top: 46px;
  margin-left: 8.7%;  
 }
