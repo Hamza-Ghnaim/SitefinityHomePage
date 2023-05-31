@@ -1755,6 +1755,9 @@ height:35.29px ;
   display: flex;
   align-items: center;
 }
+.navbar-content a:hover{
+  color:#DA6123;
+}
 .input-div{
   height: 100%;
   width: 92%;
