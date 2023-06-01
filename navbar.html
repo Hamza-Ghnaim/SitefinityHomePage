@@ -1,68 +1,57 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+  <style>
+    #arrow-button {
+  position: relative;
+  padding: 10px 20px;
+  background-color: #f1f1f1;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+#arrow-button::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  right: 10px;
+  transform: translateY(-50%) rotate(45deg);
+  width: 8px;
+  height: 8px;
+  border-top: 2px solid #000;
+  border-right: 2px solid #000;
+  transition: transform 0.3s;
+}
+
+#arrow-button:hover::after {
+  transform: translateX(10px) rotate(45deg);  
+}
+
+  </style>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="CSS.css">
     <title>Document</title>
 </head>
-<body>
-    <div class="navbar-section">
-        <div class="navbar">
-          <div class="logo">
-            <img src="NavbarLogo.png" alt="MyCrystal Group" />
-          </div>
-          <!-- <div class="navbar-content">
-            <a href="#">ABOUT</a>
-            <a href="#">CAPABILITIES</a>
-            <a href="#">INSIGHTS</a>
-            <a href="#">EVENTS</a>
-            <a href="#">CAREERS</a>
-            <img src="Group 8.svg" alt="description of your image">
-            <input type="text">
-          </div> -->
-          <div class="mobile-navbarContent">
-            <div class="search-image">
-              <img src="Group 8.svg" id="search-toggle" alt="description of your image"> 
-            </div>
-             <div class="menu-image">
-              <img src="Group 254.svg" id="menu-toggle" alt="">
-             </div>
-             <input class="search-field" id="search-field" type="text">
-             <ul class="menu-list" id="menu-list">
-              <li><a href="#">ABOUT</a></li>
-              <li><a href="#">CAPABILITIES</a></li>
-              <li><a href="#">INSIGHTS</a></li>
-              <li><a href="#">EVENTS</a></li>
-              <li><a href="#">CAREERS</a></li>
-            </ul>
-          </div>
-          <div class="navbar-content">
-            <a href="#">ABOUT</a>
-            <a href="#">CAPABILITIES</a>
-            <a href="#">INSIGHTS</a>
-            <a href="#">EVENTS</a>
-            <a href="#">CAREERS</a>
-            <img id="search-icon" src="Group 8.svg" alt="description of your image">
-            <input id="search-input" type="text">
-          </div>
-          
-        </div>
-        <div class="navbar-slider">
-        </div>
-        <div class="circle-left">
-          <img  src="Ellipse 11.svg" alt="">
-        </div>
-        <div class="circle-right">
-          <img src="Ellipse 12.svg" alt="">
-        </div>
-        
-      </div>
-      <script src="../functionality/navbar.js"></script>
+<body style="display: flex; align-items: center;justify-content: center;">
+  <button id="arrow-button">Button</button>
+
+  <script>
+    const button = document.getElementById("arrow-button");
+button.addEventListener("click", () => {
+  // Button click functionality
+  console.log("Button clicked!");
+});
+  </script>
+
+      <!-- <script src="../functionality/navbar.js"></script>
       <script src="menu-toggle.js"></script>
       <script src="search-toggle.js"></script>
       <script src="../functionality/searchbar.js"></script>
-      <script src="../functionality/slider.js"></script>
+      <script src="../functionality/slider.js"></script> -->
+      
 </body>
 </html>
