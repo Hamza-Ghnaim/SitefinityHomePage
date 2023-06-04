@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <style>
+    #arrow-button {
+  position: relative;
+  padding: 10px 20px;
+  background-color: #f1f1f1;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+#arrow-button::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  right: 10px;
+  transform: translateY(-50%) rotate(45deg);
+  width: 8px;
+  height: 8px;
+  border-top: 2px solid #000;
+  border-right: 2px solid #000;
+  transition: transform 0.3s;
+}
+
+#arrow-button:hover::after {
+  transform: translateX(10px) rotate(45deg);  
+}
+
+  </style>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="CSS.css">
+    <title>Document</title>
+</head>
+<body style="display: flex; align-items: center;justify-content: center;">
+  <button id="arrow-button">Button</button>
+
+  <script>
+    const button = document.getElementById("arrow-button");
+button.addEventListener("click", () => {
+  // Button click functionality
+  console.log("Button clicked!");
+});
+  </script>
+
+      <!-- <script src="../functionality/navbar.js"></script>
+      <script src="menu-toggle.js"></script>
+      <script src="search-toggle.js"></script>
+      <script src="../functionality/searchbar.js"></script>
+      <script src="../functionality/slider.js"></script> -->
+      
+</body>
+</html>

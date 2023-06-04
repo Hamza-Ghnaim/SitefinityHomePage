@@ -50,10 +50,10 @@ MenuToggle.addEventListener('click', function() {
     MenuList.classList.toggle('show'); // Toggle the 'show' class
         
     // Change the img src based on the toggle state
-    if (MenuToggle.getAttribute('src') === "./imgs/xmark-solid.svg") {
+    if (MenuToggle.getAttribute('src') === "./imgs/image.png") {
       MenuToggle.setAttribute('src', "./imgs/Group 254.svg");
     } else {
-      MenuToggle.setAttribute('src', "./imgs/xmark-solid.svg");
+      MenuToggle.setAttribute('src', "./imgs/image.png");
     }
   }
 });
