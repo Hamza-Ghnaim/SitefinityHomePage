@@ -25,22 +25,22 @@ function showBanner(index) {
     organizationsPerform.textContent = " Organizations Perform When Teams Work.";
     driveResult.innerHTML = "Drive the results that matter by <b> unlocking the power of  your teams.</b>";
     teamsWorkBtn.textContent = "SCHEDULE A CALL";
-    insertImage("organization.png");
+    insertImage("./imgs/organization.png");
   } else if (index === 1) {
     organizationsPerform.textContent = "Different Organizations Perform";
     driveResult.innerHTML = "Different Drive the results that matter by <b>unlocking the power of your teams.</b>";
     teamsWorkBtn.textContent = "DIFFERENT SCHEDULE A CALL";
-    insertImage("allhands_mcchrystalgroup_june_photographybytrishalegresmith_2022-7193-edit.png");
+    insertImage("./imgs/allhands_mcchrystalgroup_june_photographybytrishalegresmith_2022-7193-edit.png");
   } else if (index === 2) {
     organizationsPerform.textContent = "Another Organizations Perform";
     driveResult.innerHTML = "Another Drive the results that matter by <b>unlocking the power of your teams.</b>";
     teamsWorkBtn.textContent = "ANOTHER SCHEDULE A CALL";
-    insertImage("organization.png");
+    insertImage("./imgs/organization.png");
   } else if (index === 3) {
     organizationsPerform.textContent = "Another Organizations Perform";
     driveResult.innerHTML = "Another Drive the results that matter by <b>unlocking the power of your teams.</b>";
     teamsWorkBtn.textContent = "ANOTHER SCHEDULE A CALL";
-    insertImage("allhands_mcchrystalgroup_june_photographybytrishalegresmith_2022-7193-edit.png");
+    insertImage("./imgs/allhands_mcchrystalgroup_june_photographybytrishalegresmith_2022-7193-edit.png");
   }
 }
 
