@@ -1,0 +1,250 @@
+.encloser {
+    width: 100%;
+    max-width: 1612px;
+    margin-top: 230px;
+  }
+.Capabilites-section {
+    position: relative;
+    margin-top: 165px;
+    margin-left: 10.1%;
+    height: 626px;
+    width: 89.9%;
+  }
+  
+  .Capabilities-inner {
+    border-radius: 20px 0px 0px 20px;
+    background-color: #eaeaea;
+    margin-top: 70px;
+    width: 100%;
+    height: 486px;
+    position: relative;
+    top: 70px;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .Capabilities-poster {
+    position: absolute;
+    width: 36.7%;
+    right: 10.4%;
+    top: -18%;
+  }
+  
+  .Capabilities-poster img {
+    width: 100%;
+  }
+  
+  .capabilities-header1 {
+    color: #101135;
+    text-align: left;
+    letter-spacing: 0.75px;
+    font-size: 30px;
+    line-height: 42.25px;
+    width: 104px;
+  }
+  
+  .capabilities-header2 {
+    font-size: 48px;
+    letter-spacing: 0.75px;
+    line-height: 42.25px;
+    width: 41%;
+    margin-top: 10px;
+  }
+  
+  .capabilities-text {
+    font-size: 18px;
+    line-height: 32px;
+    width: 48%;
+    margin-top: 30.2px;
+    margin-bottom: 0px;
+  }
+  
+  .capabilities-inner2 {
+    margin-top: 103.6px;
+    margin-left: 7.3%;
+  }
+  
+  .capabilities-button {
+    font-size: 20px;
+    line-height: 38px;
+    border-radius: 5px;
+    margin-left: 7.3%;
+    margin-top: 33.6px;
+    width: 23.3%;
+    height: 77px;
+  }
+  
+  .Capabilities-inner img {
+    margin-top: 17px;
+  }
+  
+  .capabilities-text {
+    margin-top: 30.2px;
+    margin-bottom: 0px;
+  }
+
+  .overlay-image {
+    width: 65.8%;
+    height: 1061px;
+    position: absolute;
+    top: -83%;
+    left: -30%;
+  }
+
+
+
+
+@media only screen and (max-width:1440px) {
+    .Capabilities-inner {
+        height: 466px;
+      }
+      .Capabilities-poster{
+        width: 38.7%;
+        top: -17%;
+        right: 7.4%;
+      }
+}
+@media only screen and (max-width:1366px) {
+    .Capabilities-inner {
+        height: 426px;
+      
+      }
+      .Capabilities-poster{
+        top:-9%;
+        right: 3.4%;
+      }
+}
+
+@media only screen and (max-width: 1200px){
+    .capabilities-header1 {
+        font-size: 28px;
+      }
+    .Capabilities-inner {
+        height: 380px;
+      }
+      .Capabilities-poster {
+        top: -19%;
+        right: 2%;
+        width: 41.7%;
+      }
+      .capabilities-header2 {
+        font-size: 46px;
+        width: 47%;
+      }
+      .capabilities-text {
+        font-size: 14px;
+        line-height: 27px;
+        width: 55%;
+      }
+    }
+@media only screen and (max-width: 1022px){
+    .Capabilities-inner {
+        height: 285px;
+      }
+      .capabilities-header1 {
+        font-size: 22px;
+        width: 89px;
+      }
+      .capabilities-header2 {
+        font-size: 34px;
+        width: 45%;
+      }
+      .capabilities-text {
+        font-size: 12px;
+        line-height: 24px;
+        width: 53%;
+      }
+}
+@media only screen and (max-width: 767px){
+    .Capabilites-section {
+        position: relative;
+        margin-top: 289px;
+        /* margin-left: 162px; */
+        margin-left: 8.3%;
+        height: 612px;
+        /* width: 1450px; */
+        width: 91.7%;
+        position: relative;
+      }
+      .Capabilities-inner {
+        border-radius: 15px 0px 0px 15px;
+      /* opacity: 0.5; */
+        background-color: #EAEAEA;
+        margin-top: 0;
+        /* width: 1450px; */
+        width: 100%;
+        height: 100%;
+        position: relative;
+        top: 0;
+        display: flex;
+        flex-direction: column;
+      }
+      .Capabilities-poster {
+        z-index: 2;
+        top: -16%;
+        right: 9%;
+        width: 72%;
+      }
+      .capabilities-header1 {
+        text-align: left;
+        font: normal normal 300 24px/37px Plantin MT Pro;
+        letter-spacing: 0.6px;
+        color: #101135;
+        opacity: 1;
+      }
+      .capabilities-header2 {
+        margin-top: 0;
+        font-size: 32px;
+        width: 100%;
+      }
+      .capabilities-text {
+        /* font-size: 12px; */
+        line-height: 24px;
+        width: 79%;
+        text-align: left;
+      font: normal normal normal 15px/28px Cooper Hewitt;
+      letter-spacing: 0.07px;
+      color: #101135;
+      opacity: 1;
+      margin-top: 30px;
+      }
+      .overlay-image {
+        width: 140%;
+        height: 557px;
+        position: absolute;
+        top: -53%;
+        left: -41%;
+      }
+      .encloser{
+        margin-top: 268px;
+      }
+    }
+
+@media only screen and (max-width: 630px){
+
+}
+@media only screen and (max-width: 530px){
+
+}
+@media only screen and (max-width:431px){
+    .Capabilites-section{
+        margin-top: 250px;
+      }
+      .encloser{
+        margin-top: 222px;
+      }
+}
+@media only screen and (max-width:424px){
+
+}
+@media only screen and (max-width:374px){
+    .capabilities-header1 {
+        font: normal normal 300 21px/35px Plantin MT Pro;
+    }
+    .capabilities-header2 {
+        font-size: 27px;
+      }
+      .capabilities-text {
+        font: normal normal normal 12px/24px Cooper Hewitt
+      }
+}

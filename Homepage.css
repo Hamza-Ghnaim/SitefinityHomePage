@@ -10,7 +10,7 @@ html {
 }
 
 body {
-  align-items: center;
+  /* align-items: center; */
   font-family: 'Cooper Hewitt', sans-serif;
   overflow-x: hidden;
 }
@@ -558,6 +558,8 @@ margin-top: 7px;
   font-size: 18px;
   line-height: 32px;
   width: 48%;
+  margin-top: 30.2px;
+  margin-bottom: 0px;
 }
 
 .capabilities-inner2 {
@@ -577,11 +579,6 @@ margin-top: 7px;
 
 .Capabilities-inner img {
   margin-top: 17px;
-}
-
-.capabilities-text {
-  margin-top: 30.2px;
-  margin-bottom: 0px;
 }
 
 .encloser {
@@ -1438,8 +1435,6 @@ height:35.29px ;
 .navbar {
   display: flex;
   width: 100%;
-  /* justify-content: space-between; */
-
 }
 
 .mobile-navbarContent {
@@ -1495,19 +1490,6 @@ height:35.29px ;
   letter-spacing: 1px;
 }
  .searchInput-inner{
-  position: absolute;
-  top: 42px;
-  border-radius: 5px;
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  justify-content: flex-start;
-  background: white;
-  width: 83%;
-  height: 54px;
- }
-
- .MobilesearchInput-inner{
   position: absolute;
   top: 42px;
   border-radius: 5px;
@@ -1632,10 +1614,6 @@ left: -0.5%;
   height: 0;
 }
 
-.ARROW-UP{
-  /* width: ; */
-  /* height: ; */
-}
 
 .arrow{
 
@@ -1721,13 +1699,10 @@ left: -0.5%;
 }
 
 .capabilities-list{
-    /* list-style-type: none; */
     display: flex;
     flex-direction: column;
     justify-content: left;
     align-items: flex-start;
-    /* margin: 0; */
-    /* padding: 0; */
 }
 
 .capabilities-list a{
@@ -1926,9 +1901,6 @@ margin-top: 15px;
     width:25px ;
     height:25px ;
   }
-  /* .navbar {
-    gap: 28%;
-  } */
   .TeamsWorkbtn{
     font-size: 13px;
     width: 264.66px;
@@ -2010,7 +1982,6 @@ margin-top: 15px;
 }
 .Capabilities-inner {
   height: 466px;
-
 }
 .my-form button {
   background: transparent;
@@ -2444,9 +2415,6 @@ font-size: 8px;
 }
 .row1 {
   gap: 16%;
-}
-.column3 {
-  margin-left: 19%;
 }
 .HeaderTextInner {
   width: 85%;
@@ -3440,10 +3408,9 @@ opacity: 1;
 .HeaderText3{
 font-size:13px;
 }
+
 .card-headline {
  font-size: 22px;
-}
-.card-headline {
   text-align: left;
   font: normal normal 600 22px/29px CooperHewitt-
 }

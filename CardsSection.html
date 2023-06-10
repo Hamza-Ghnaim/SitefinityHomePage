@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .cards-section {
+    width: 100%;
+    margin-top: 128.3px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 127.3px;
+  }
+  .row1 {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    gap: 13%;
+  }
+  
+  .row2 {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    gap: 11.4%;
+  }
+  
+  .column1 {
+    margin-left: 9%;
+    width: 29.5%;
+    display: flex;
+    flex-direction: row;
+    gap: 7%;
+  }
+  
+  .column2 {
+    width: 29.5%;
+    display: flex;
+    flex-direction: row;
+    gap: 7%;
+  }
+  
+  .column3 {
+    width: 29.5%;
+    display: flex;
+    flex-direction: row;
+    gap: 7%;
+    margin-left: 23%;
+  }
+  
+  .column4 {
+    width: 29.5%;
+    display: flex;
+    flex-direction: row;
+    gap: 7%;
+  }
+  
+  .card-text {
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+  }
+  
+  .card-headline {
+    font-size: 36px;
+    line-height: 36px;
+    text-align: left;
+    letter-spacing: 0.75px;
+    color: #101135;
+    text-transform: uppercase;
+    opacity: 1;
+  }
+  
+  .card-description,
+  .card-description1,
+  .card-description2,
+  .card-description3,
+  .card-description4 {
+    text-align: left;
+    letter-spacing: 0.09px;
+    color: #101135;
+    opacity: 1;
+    font-size: 18px;
+    line-height: 32px;
+  }
+  
+  .cards-button {
+    width: 19.8%;
+    height: 77px;
+    color: #101135;
+    border-radius: 6px;
+    background: transparent;
+  }
+@media only screen and (max-width:1440px) {
+    .card-headline{
+        font-size: 30px;
+        line-height: 34px;
+      }
+      .card-description1 {
+        font-size: 15px;
+        line-height: 30px;
+      }
+      .card-description2 {
+        font-size: 15px;
+        line-height: 30px;
+      }
+      .card-description3 {
+        font-size: 15px;
+        line-height: 30px;
+      }
+      .card-description4 {
+        font-size: 15px;
+        line-height: 30px;
+      }
+
+}
+@media only screen and (max-width:1366px) {
+    .row1{
+        gap: 12%;
+      }
+
+      .row2{
+        gap: 10%;
+      }
+}
+
+@media only screen and (max-width: 1200px){
+    .row1 {
+        gap: 14%;
+      }
+      .row2 {
+        gap: 13%;
+      }
+      .column1 {
+        margin-left: 7%;
+      }
+      .column3 {
+
+        margin-left: 23%;
+      }
+      .card-headline {
+        font-size: 24px;
+        line-height: 26px;
+      }
+}
+@media only screen and (max-width: 1022px){
+    .row1 {
+        gap: 16%;
+      }
+      .column1 {
+        margin-left: 6%;
+      }
+
+      .column3{
+        margin-left: 17%;
+    }
+    .card-headline {
+        font-size: 20px;
+        line-height: 24px;
+      }
+      
+}
+@media only screen and (max-width: 767px){
+    .cards-section {
+        gap: 70px;
+        align-items: normal;
+      }
+      .row1 {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        gap: 70px;
+        margin-left: 8.3%;
+      }
+      .row2 {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        gap: 70px;
+        margin-left: 8.3%;
+      }
+      .column1 {
+        margin-left: 0;
+        width: 100%;
+        gap: 4%;
+      }
+      .column2 {
+        width: 100%;
+        gap: 4%;
+      }
+      .column3 {
+        margin-left: 0;
+        width: 100%;
+        gap: 4%;
+      
+      }
+      .column4   {
+        gap: 4%;
+        width: 100%;
+      }
+      .card-text {
+        gap: 7px;
+      }
+      .card-headline{
+        text-align: left;
+      letter-spacing: 0px;
+      color: #101135;
+      text-transform: uppercase;
+      opacity: 1;
+      }
+}
+
+@media only screen and (max-width: 630px){
+
+}
+@media only screen and (max-width: 530px){
+
+}
+@media only screen and (max-width:431px){
+    .card-headline{
+        text-align: left;
+      font: normal normal 600 24px/29px CooperHewitt-Semibold;
+      letter-spacing: 0.6px;
+      color: #101135;
+      text-transform: uppercase;
+      opacity: 1;
+      }
+
+}
+@media only screen and (max-width:424px){
+    .card-headline {
+        font-size: 22px;
+         text-align: left;
+         font: normal normal 600 22px/29px CooperHewitt-
+       }
+}
+@media only screen and (max-width:374px){
+
+}
+    </style>
+</head>
+<body>
+    <div class="cards-section">
+        <div class="row1">
+          <div class="column1">
+              <div class="card-logo">
+                <img src="./imgs/Group 5.png" alt="">
+              </div>
+              <div class="card-text">
+                <p class="card-headline">FOCUSED <br> ENGAGEMENT</p>
+                <p class="card-description1">Unite people around a common <br> vision and set of priorities, inspiring <br> people to do their best work</p>
+              </div>
+          </div>
+          <div class="column2">
+             <div class="card-logo">
+                <img src="./imgs/Group 5 copy.png" alt="">
+              </div>
+              <div class="card-text">
+                <p class="card-headline">ACELERATED <br> GROWTH</p>
+                <p class="card-description2">Match the speed of <br> execution with the pace your <br> environment demands.</p>
+              </div>
+            </div>
+          </div>
+          <div class="row2">
+            <div class="column3">
+                <div class="card-logo">
+                  <img src="./imgs/Group 5.jpg" alt="">
+                </div>
+                <div class="card-text">
+                  <div class="card-text">
+                    <p class="card-headline">INSTINCTIVE</BR>AGILITY</p>
+                    <p class="card-description3">
+                      Streamline communications so that <br> high-quality decisions can be made <br> fast and effectively implemented.</p>
+                  </div>
+                </div>
+            </div>
+            <div class="column4">
+                <div class="card-logo">
+                  <img src="./imgs/Group 5 copy.jpg" alt="">
+                </div>
+                <div class="card-text">
+                  <div class="card-headline">ORGANIC <br> INNOVATION</div>
+                  <div class="card-description4">
+                    Create an environment in which <br> new ideas flourish and are <br> shared freely.
+                  </div>
+                </div>
+            </div>
+          </div>
+          <button class="cards-button">
+            VIEW OUR CAPABILITIES
+          </button>
+      </div>
+</body>
+</html>

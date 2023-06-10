@@ -1,0 +1,976 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            margin: 0;
+            padding: 0;
+        }
+        .navbar-section {
+    box-sizing: border-box;
+    border: 2px solid #eaeaea;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+      position: fixed;
+      top: 0;
+      width: 100%;
+      /* max-width: 1612px; */
+      height: 146px;
+      z-index: 10;
+      background: white;
+  }
+  .navbar {
+    display: flex;
+    width: 100%;
+  }
+  .logo {
+    width: 67.9%;
+    height: 31.29px;
+    margin-left: 8%;
+  }
+  
+  .logo img {
+    height: 100%;
+  }
+  .mobile-navbarContent {
+    padding-right: 10%;
+    display: none;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 25px;
+    margin-left: 50%;
+  }
+  .search-image{
+    width: 22px;
+    height: 22px;
+  }
+  .MobilesearchInput-container {
+    display: none;
+    position: absolute;
+    background-color:#EAEAEA;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    width: 103%;
+    height: 100vh;
+    right: 0;
+    left: -3px;
+    top: 101%;
+      }
+      .MobilesearchInput-inner {
+        position: absolute;
+        top: 42px;
+        border-radius: 5px;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: flex-start;
+        background: white;
+        width: 83%;
+        height: 54px;
+      }
+      .Mobileinput-div {
+        height: 100%;
+        width: 82%;
+        margin-left: 4%;
+      }
+      .Mobilesearch-input{
+        height: 92%;
+        width: 100%;
+        border: none;
+       }
+       .menu-image{
+        width: 28px;
+        height: 22px;
+      }
+      .menu-list {
+        padding-top: 45px;  
+        /* padding-left: 43.2px; */
+        padding-left: 10%;
+        visibility: hidden;
+        list-style-type: none;
+        width: 100%;
+        /* height: 842px; */
+        height: 87vh;
+        overflow-y: scroll;
+        /* padding: 0; */
+        /* margin: 0; */
+        position: fixed;
+        align-items: flex-start;
+        top: 13%;
+        left: 0%;
+        display: flex;
+        flex-direction: column;
+        gap: 32px;
+        /* transform: translate(-50%, -50%); */
+        /* width: 50%; */
+        background-color: #fbf9f9;
+        /* box-shadow: 0 2px 4px rgba(0, 0, 0, 0.5); */
+        z-index: 2;
+      }
+
+      .menu-list img{
+  width: 11px;
+}
+      
+      .menu-list::-webkit-scrollbar {
+        width: 6px;
+      }
+      
+      .menu-list::-webkit-scrollbar-track {
+        background-color: transparent;
+      }
+      
+      .menu-list::-webkit-scrollbar-thumb {
+        background-color: transparent;
+      }
+      
+      .menu-list div {
+        width: 89%;
+        display: flex;
+        /* flex-direction: row; */
+        justify-content: space-between;
+        /* padding: 10px; */
+        text-align: center; /* Center the text */
+        /* margin-bottom: 8px; */
+      }
+      
+      .menu-list a{
+        font-size: 22px;
+        line-height: 43px;
+        text-decoration: none;
+        color: #03283C;
+      }
+
+      .menu-list.show {
+  visibility: visible;
+}
+      .capabilities-list{
+        display: flex;
+        flex-direction: column;
+        justify-content: left;
+        align-items: flex-start;
+    }
+    
+    .capabilities-list a{
+      font-size: 18px;
+      width: 100%;
+      text-align: left;
+      color: #DA6123;
+    }
+    #capabilities-list {
+        display: none;
+      }
+      .navbar-content {
+        display: flex;
+        gap: 41px;
+        /* margin-left: 26%; */
+        padding-right: 6%;
+      }
+      
+      .navbar-content a {
+        text-decoration: none;
+        color: black;
+        display: flex;
+        align-items: center;
+      }
+      .navbar-content a:hover{
+        color:#DA6123;
+      }
+      #capabilities-list {
+        display: none;
+      }
+      
+      
+      #capabilities-link.active {
+        color: #DA6123;
+      }
+      
+      #CAPABILITIES.active{
+        color: #DA6123;
+      }
+      
+      #capabilities-arrow.active {
+        transform: rotate(90deg);
+        filter: invert(22%) sepia(78%) saturate(3969%) hue-rotate(25deg) brightness(101%) contrast(102%);
+      
+      }
+      textarea:focus, input:focus{
+        outline: none;
+      }
+      
+      .searchInput-container {
+        overflow-y: scroll;
+        display: none;
+        position: absolute;
+        background-color:#EAEAEA;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        width: 103%;
+        height: 100vh;
+        right: 0;
+        left: -3px;
+        top: 101%;
+      }
+      .searchInput-inner{
+        position: absolute;
+        top: 42px;
+        border-radius: 5px;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: flex-start;
+        background: white;
+        width: 83%;
+        height: 54px;
+       }
+       .input-div{
+        height: 100%;
+        width: 92%;
+        margin-left: 2%;
+      }
+      .search-input{
+        height: 95%;
+        width: 100%;
+        border: none;
+       }
+       .capabilities-menu {
+        overflow-y: scroll;
+        width: 102%;
+        height: 90vh;
+        display: none;
+        position: fixed;
+        top: 55.5%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        background-color: #fbf9f9;
+        z-index: 9999;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+      }
+      
+      .capabilities-menu::-webkit-scrollbar {
+        width: 6px;
+      }
+      
+      .capabilities-menu::-webkit-scrollbar-track {
+        background-color: transparent;
+      }
+      
+      .capabilities-menu::-webkit-scrollbar-thumb {
+        background-color: transparent;
+      }
+      .top-menu {
+        /* max-width: 1612px; */
+        display: flex;
+        flex-direction: row;
+        height: 764px;
+        gap: 3.7%;
+        background-color: #fbf9f9;
+        width: 100%;
+        margin-left: -9px;
+        margin-top: 69px;
+      }
+      .left-options {
+        display: flex;
+        flex-direction: column;
+        gap: 27.3px;
+        margin-left: 143px;
+        width: 25.1%;
+      }
+      
+      .leftOptions-header {
+        font-size: 28px;
+        line-height: 43px;
+      }
+      
+      .leftOptions-text {
+        font-size: 18px;
+        margin-top: -12px;
+        line-height: 32px;
+      }
+      
+      .leftOptions-button {
+        width: 74%;
+        height: 73px;
+        border-radius: 5px;
+        background-color: transparent;
+        font-size: 16px;
+        line-height: 20px;
+      }
+      
+      .right-options {
+        width: 59%;
+        display: flex;
+        flex-direction: column;
+      }
+      
+      .rightOptions-header1 {
+        display: flex;
+        flex-direction: row;
+        font-size: 20px;
+        line-height: 26px;
+      }
+      .header1-first {
+        width: 29%;
+      }
+      
+      .header1-second {
+        width: 33%;
+      }
+      
+      .header1-third {
+        width: 38%;
+      }
+      
+      .header2-first {
+        width: 29%;
+      }
+      
+      .header2-second {
+        width: 33%;
+      }
+      
+      .header2-third {
+        width: 38%;
+      }
+      
+      .gray-line{
+      
+      margin-top: 7px;
+        width: 95%;
+        height: 1px;
+        background: #EAEAEA;
+        
+      }
+      .black-line{
+      
+        margin-top: 7px;
+          width: 100%;
+          height: 1px;
+          background: #cecece;
+        }
+      
+      .rightOptions-choices1{
+        display: flex;
+        flex-direction: column;
+        gap: 21px;
+      }
+      
+      .rightOptions-choices21 {
+        display: flex;
+        flex-direction: column;
+        gap: 21px;
+      }
+      
+      .bottomOptions-choices {
+        display: flex;
+        flex-direction: column;
+      }
+      
+      .optionsContent1 {
+        display: flex;
+        flex-direction: row;
+        margin-top: 27.5px;
+      }
+      
+      .optionsContent21 {
+        display: flex;
+        flex-direction: row;
+        margin-top: 27.5px;
+      }
+      
+      .BottomoptionsContent {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+        margin-top: 16.5px;
+      }
+      
+      .optionsContent2 {
+        display: flex;
+        flex-direction: row;
+      }
+      
+      .optionsContent22 {
+        display: flex;
+        flex-direction: row;
+      }
+      
+      .optionsContent3 {
+        display: flex;
+        flex-direction: row;
+      }
+      
+      .optionsContent23 {
+        display: flex;
+        flex-direction: row;
+      }
+      
+      .option11 {
+        width: 29%;
+      }
+      
+      .option12 {
+        width: 33%;
+      }
+      
+      .option21 {
+        width: 29%;
+      }
+      
+      .option211 {
+        width: 29%;
+      }
+      
+      .option212 {
+        width: 33%;
+      }
+      
+      .Buttomoption11 {
+        font-size: 15px;
+        line-height: 20px;
+      }
+      
+      .Buttomoption12 {
+        font-size: 15px;
+        line-height: 20px;
+      }
+      
+      .Buttomoption13 {
+        font-size: 15px;
+        line-height: 20px;
+      }
+      
+      .option213 {
+        width: 38%;
+      }
+      
+      .option221 {
+        width: 29%;
+      }
+      
+      .option222 {
+        width: 33%;
+      }
+      
+      .option223 {
+        width: 38%;
+      }
+      
+      .option13 {
+        width: 38%;
+      }
+      
+      .option22 {
+        width: 33%;
+      }
+      
+      .option23 {
+        width: 38%;
+      }
+      
+      .option31 {
+        width: 29%;
+      }
+      
+      .option32 {
+        width: 33%;
+      }
+      
+      .option231 {
+        width: 29%;
+      }
+      
+      .option232 {
+        width: 33%;
+      }
+      
+      .option33 {
+        width: 38%;
+      }
+      
+      .optionsContent p {
+        font-size: 15px;
+        line-height: 20px;
+      }
+      
+      .bottom-menu {
+        height: 210px;
+        background-color: #eaeaea;
+        display: flex;
+        flex-direction: row;
+      }
+      
+      .bottom-menu button {
+        width: 17.8%;
+        height: 73px;
+        margin-top: 60px;
+        border-radius: 6px;
+        margin-left: 4.3%;
+        font-size: 16px;
+        line-height: 20px;
+        background: transparent;
+      }
+      
+      .bottomMenu-inner {
+        width: 57%;
+        display: flex;
+        flex-direction: column;
+        margin-top: 46px;
+        margin-left: 8.7%;
+      }      
+      .navbar-slider {
+        position: absolute;
+        bottom: 0;
+        height: 3px;
+        width: 100%;
+        /* background: linear-gradient(to right, #DA6123 5%, #EAEAEA 5%, #EAEAEA); */
+      }
+      
+      .circle-left{
+      position: absolute;
+      width: 12px;
+      height: 12px;
+      bottom: -2%;
+      left: -0.5%;
+      }
+      
+      .circle-right{
+        position: absolute;
+        bottom: 0;
+        width: 12px;
+        height: 12px;
+        bottom: -2%;
+        right: -0.3%;
+        /* background-color: transparent; */
+        opacity: 1;
+      }
+
+@media only screen and (max-width:1440px) {}
+@media only screen and (max-width:1366px) {}
+@media only screen and (max-width: 1200px){
+    
+    .navbar-content{gap: 30px;}
+}
+@media only screen and (max-width: 1022px){
+    .navbar-content {
+    display: none;
+  }
+       .mobile-navbarContent{
+      display: flex;
+    }
+    .logo{
+        display: flex;
+        align-items: center;   
+        width: 12.9%;
+    }
+
+    .logo img{
+    width: 167px;
+    height: 20px;
+}
+}
+@media only screen and (max-height:1440px){
+.menu-list{
+  top: 9%;
+}
+}
+@media only screen and (max-height:1024px){
+  .menu-list{
+    top: 13%;
+  }
+  }
+  @media only screen and (max-height:768px){
+    .menu-list{
+      top: 15%;
+    }
+    }
+    @media only screen and (max-height:630px){
+      .menu-list{
+        top: 21.5%;
+      }
+      }
+      @media only screen and (max-height:430px){
+        .menu-list{
+          top: 31.5%;
+        }
+        }
+        @media only screen and (max-height:320px){
+          .menu-list{
+            top: 42.5%;
+          }
+          }
+@media only screen and (max-height:1024px){
+  .capabilities-menu{
+    top: 57.5%;
+  }
+}
+@media only screen and (max-height: 960px){
+  .capabilities-menu{
+    top: 58.5%;
+  }
+}
+@media only screen and (max-height: 900px){
+  .capabilities-menu{
+    top: 59.5%;
+  }
+}
+@media only screen and (max-height: 864px){
+  .capabilities-menu{
+    top: 60.5%;
+  }
+}
+@media only screen and (max-height: 800px){
+  .capabilities-menu{
+    top: 61.5%;
+  }
+}
+@media only screen and (max-height: 768px){
+  .capabilities-menu{
+    top: 62.5%;
+  }
+}
+@media only screen and (max-height: 720px){
+  .capabilities-menu{
+    top: 63.5%;;
+  }
+}
+@media only screen and (max-height: 600px){
+  .capabilities-menu{
+    top: 67.5%;
+  }
+}
+/* ///////////////////////////////////////// */
+@media only screen and (max-height: 1440px) and (max-width: 431px) {
+  .menu-list {
+    top:6.2%;
+  }
+}
+@media only screen and (max-height:1024px) and (max-width: 431px){
+  .menu-list{
+    top: 8.5%;
+  }
+  }
+  @media only screen and (max-height:768px) and (max-width: 431px){
+    .menu-list{
+      top: 11.5%;
+    }
+    }
+    @media only screen and (max-height:630px) and (max-width: 431px){
+      .menu-list{
+        top: 14.3%;
+      }
+      }
+      @media only screen and (max-height:430px) and (max-width: 431px){
+        .menu-list{
+          top: 20.3%;
+        }
+        }
+        @media only screen and (max-height:320px) and (max-width: 431px){
+          .menu-list{
+            top: 27.5%;
+          }
+          }
+
+    </style>
+</head>
+<body>
+    <div class="navbar-section">
+        <div class="navbar">
+          <div class="logo">
+            <img src="./imgs/NavbarLogo.png" alt="MyCrystal Group" />
+          </div>
+
+          <div class="mobile-navbarContent">
+            <div class="search-image">
+              <img src="./imgs/Group 8.svg" id="Mobilesearch-icon" alt="description of your image"> 
+              <div class="MobilesearchInput-container">
+                <div class="MobilesearchInput-inner">
+                  <div class="Mobileinput-div">
+                    <input class="Mobilesearch-input" type="text" placeholder="Search">
+                  </div>
+                  <div>
+                    <img src="./imgs/Group 8.svg" alt="description of your image">
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="menu-image">
+              <img src="./imgs/Group 254.svg" id="menu-toggle" alt="">
+            </div>
+            <div class="menu-list" id="menu-list">
+              <div>
+                <a href="#">ABOUT</a>
+                <img src="./imgs/chevron-right-solid.svg" alt="">
+              </div>
+              <div>
+                <a href="#" id="capabilities-link">CAPABILITIES</a>
+                <img src="./imgs/chevron-right-solid.svg" alt="" id="capabilities-arrow">
+              </div>
+              <div class="capabilities-list" id="capabilities-list">
+                  <a href="#">Team of Teams</a>
+                  <a href="#">Leadership Development</a>
+                  <a href="#">Communications & Collaboration</a>
+                  <a href="#">Decision Making</a>
+                  <a href="#">Strategy & Execution</a>
+                  <a href="#">Intelligence</a>
+                  <a href="#">Case Study</a>
+              </div>
+              <div>
+                <a href="#">INSIGHTS</a>
+                <img src="./imgs/chevron-right-solid.svg" alt="">
+              </div>
+              <div>
+                <a href="#">EVENTS</a>
+                <img src="./imgs/chevron-right-solid.svg" alt="">
+              </div>
+              <div>
+                <a href="#">CAREERS</a>
+                <img src="./imgs/chevron-right-solid.svg" alt="">
+              </div>
+            </div>
+          </div>
+
+          <div class="navbar-content">
+            <a href="#">ABOUT</a>
+            <a href="#" class="capabilities-link" id="CAPABILITIES">CAPABILITIES</a>
+            <a href="#">INSIGHTS</a>
+            <a href="#">EVENTS</a>
+            <a href="#">CAREERS</a>
+            <img id="search-icon" src="./imgs/Group 8.svg" alt="description of your image">
+            <div class="searchInput-container">
+              <div class="searchInput-inner">
+                <div class="input-div">
+                  <input class="search-input" type="text" placeholder="Search ">
+                   </div>
+                  <div>
+                    <img src="./imgs/Group 8.svg" alt="description of your image">
+                  </div>
+              </div>
+            </div>
+          </div>
+          
+          <div class="capabilities-menu">
+            <div class="top-menu">
+              <div class="left-options">
+                <p class="leftOptions-header">Capabilities</p>
+                <p class="leftOptions-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla feugiat auctor bibendum. Mauris vel orci ligula. Etiam egestas aliquet mollis. Duis viverra lacus a nisl vestibulum, venenatis fermentum diam blandit. </p>
+                <button class="leftOptions-button">VIEW OUR CAPABILITIES</button>
+              </div>
+              <div class="right-options">
+                <div class="rightOptions-header1">
+                  <p class="header1-first">Team of Teams</p>
+                  <p class="header1-second">Leadership Development</p>
+                  <p class="header1-third">Communication & Collaboration</p>
+                </div>
+                <div class="gray-line"></div>
+                <div class="rightOptions-choices1">
+                  <div class="optionsContent1">
+                    <p class="option11">TRUST</p>
+                    <p class="option12">CUSTOM PROGRAMS</p>
+                    <p class="option13">COMMUNICATIONS FORUM</p>
+                  </div>
+                  <div class="optionsContent2">
+                    <P class="option21">COMMON PURPOSE</P>
+                    <P class="option22">TEAM OFFSITES</P>
+                    <P class="option23">FUSION CELLS</P>
+                  </div>
+                  <div class="optionsContent3">
+                    <P class="option31">SHARED <br> CONSCIOUSNESS <br> EMPOWERED EXECUTION</P>
+                    <P class="option32">SIMULATIONS</P>
+                    <P class="option33">ENTERPRISE SOLUTIONS</P>
+                  </div>
+                </div>
+                <div class="rightOptions-header2">
+                  <p class="header2-first">Strategy & Execution</p>
+                  <p class="header2-second">Intelligence</p>
+                  <p class="header2-third">Decision Making</p>
+                </div>
+                <div class="gray-line"></div>
+                <div class="rightOptions-choices21">
+                  <div class="optionsContent21">
+                    <p class="option211">OPERATIN RHYTHM</p>
+                    <p class="option212">ORGANIZATIONAL DIAGNOSTIC</p>
+                    <p class="option213">RED TEAMING</p>
+                  </div>
+                  <div class="optionsContent22">
+                    <P class="option221">RED TEAM - WAR <br> GAMING</P>
+                    <P class="option222">MICROSOFT PARTNERSHIP</P>
+                    <P class="option223">DATA&KNOWLEDGE MANAGEMENT</P>
+                  </div>
+                  <div class="optionsContent23">
+                    <P class="option231">TECH ENABLMENT</P>
+                    <P class="option232">ANALYTICS</P>
+                    <P class="option233"></P>
+                  </div>
+                </div>
+                <div class="rightOptions-header22"></div>
+                <div class="rightOptions-choices22"></div>
+              </div>
+            </div>
+            <div class="bottom-menu">
+              <div class="bottomMenu-inner">
+                <div class="rightOptions-header1">
+                <p> Case Studies</p>
+                </div>
+                <div class="black-line"></div>
+                <div class="bottomOptions-choices">
+                  <div class="BottomoptionsContent">
+                    <p class="Buttomoption11">Reigniting Innovation <br> With a Focused Strategy</p>
+                    <p class="Buttomoption12">Modernizing an Operations <br> Center to Work as a Team</p>
+                    <p class="Buttomoption13">How a State Agency Scaled <br> Communication Throughout Its Teams</p>
+                  </div>
+                </div>
+              </div>
+              <button>VIEW OUR CASE STUDIES</button>
+            </div>
+          </div>
+        </div>
+        <div class="navbar-slider">
+        </div>
+        <div class="circle-left">
+          <img  src="./imgs/Ellipse 11.svg" alt="">
+        </div>
+        <div class="circle-right">
+          <img src="./imgs/Ellipse 12.svg" alt="">
+        </div>
+        
+      </div>
+
+<script>
+window.addEventListener('scroll', function() {
+    var scrollPercentage = window.scrollY / (document.body.scrollHeight - window.innerHeight);
+    var orangeWidth = Math.min((scrollPercentage * 100) , 100);
+    if (window.innerWidth <= 430) {
+      color = 'linear-gradient(to right, #DA6123 18%, #DA6123 ' + orangeWidth + '%, #EAEAEA ' + orangeWidth + '%)';
+    } else {
+      color = 'linear-gradient(to right, #DA6123 5%, #DA6123 ' + orangeWidth + '%, #EAEAEA ' + orangeWidth + '%)';
+    }
+    document.querySelector('.navbar-slider').style.background = color;
+  });
+  
+  // Set initial color with slight orange on the left
+  if (window.innerWidth <= 430) {
+  var initialColor = 'linear-gradient(to right, #DA6123 18%, #EAEAEA 5%, #EAEAEA)';
+  }
+else{
+  var initialColor = 'linear-gradient(to right, #DA6123 5%, #EAEAEA 5%, #EAEAEA)';
+
+}
+  document.querySelector('.navbar-slider').style.background = initialColor;
+  
+</script>
+<script>
+  
+  const capabilitiesLink = document.querySelector('.capabilities-link');
+const capabilitiesMenu = document.querySelector('.capabilities-menu');
+let isMenuOpen = false;
+
+function updateMenuVisibility() {
+  if (window.innerWidth <1023 || !isMenuOpen) {
+    capabilitiesMenu.style.display = 'none';
+  } else {
+    capabilitiesMenu.style.display = 'block';
+  }
+}
+
+capabilitiesLink.addEventListener('click', (event) => {
+  event.preventDefault(); // Prevent the link from redirecting
+
+  if (capabilitiesMenu.style.display === 'block') {
+    capabilitiesMenu.style.display = 'none'; // Hide the capabilities menu if it's already visible
+    isMenuOpen = false;
+    capabilitiesLink.style.color = ''; // Reset the link color
+  } else {
+    capabilitiesMenu.style.display = 'block'; // Show the capabilities menu
+    isMenuOpen = true;
+    capabilitiesLink.style.color = '#DA6123'; // Set the link color to #DA6123
+  }
+});
+
+window.addEventListener('resize', updateMenuVisibility); // Add event listener for resize
+
+updateMenuVisibility(); // Call the function initially to set the initial menu visibility based on screen width
+
+</script>
+<script>
+    window.onload = function() {
+  var mobileSearchIcon = document.getElementById("Mobilesearch-icon");
+  var mobileSearchInputContainer = document.querySelector(".MobilesearchInput-container");
+  
+  mobileSearchInputContainer.style.display = "none"; // Set initial state to hidden
+  
+  mobileSearchIcon.addEventListener("click", function() {
+    if (mobileSearchInputContainer.style.display === "none") {
+      mobileSearchInputContainer.style.display = "flex";
+    } else {
+      mobileSearchInputContainer.style.display = "none";
+    }
+  });
+  var searchIcon = document.getElementById("search-icon");
+  var searchInputContainer = document.getElementsByClassName("searchInput-container")[0];
+  
+  searchInputContainer.style.display = "none"; // Set initial state to hidden
+  
+  searchIcon.addEventListener("click", function() {
+    if (searchInputContainer.style.display === "none") {
+      searchInputContainer.style.display = "flex";
+    } else {
+      searchInputContainer.style.display = "none";
+    }
+  });
+};
+
+</script>
+<script>
+    
+const SearchField = document.querySelector('.Mobilesearch-input');
+var MenuList = document.getElementById('menu-list');
+var MenuToggle = document.getElementById('menu-toggle');
+
+const McapabilitiesLink = document.getElementById("capabilities-link");
+const capabilitiesArrow = document.getElementById("capabilities-arrow");
+const capabilitiesList = document.getElementById("capabilities-list");
+
+McapabilitiesLink.addEventListener("click", () => {
+  McapabilitiesLink.classList.toggle("active");
+  capabilitiesArrow.classList.toggle("active");
+  capabilitiesList.classList.toggle("active");
+
+  if (capabilitiesList.classList.contains("active")) {
+    capabilitiesList.style.display = "flex";
+  } else {
+    capabilitiesList.style.display = "none";
+  }
+});
+
+MenuToggle.addEventListener('click', function() {
+  if (!SearchField.classList.contains('show')) {
+    MenuList.classList.toggle('show'); // Toggle the 'show' class
+        
+    // Change the img src based on the toggle state
+    if (MenuToggle.getAttribute('src') === "./imgs/image.png") {
+      MenuToggle.setAttribute('src', "./imgs/Group 254.svg");
+    } else {
+      MenuToggle.setAttribute('src', "./imgs/image.png");
+    }
+  }
+});
+
+</script>
+<script>
+    
+</script>
+</body>
+</html>
